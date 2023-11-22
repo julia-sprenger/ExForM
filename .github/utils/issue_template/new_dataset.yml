@@ -116,14 +116,14 @@ body:
         - Other (please update later on)
     validations:
       required: false  
-  - type: input
-    id: year
-    attributes:
-      label: Year
-      description: The year of reference publication
-      placeholder: example 2019
-    validations:
-      required: false
+  # - type: input
+  #   id: year
+  #   attributes:
+  #     label: Year
+  #     description: The year of reference publication
+  #     placeholder: example 2019
+  #   validations:
+  #     required: false
 
 # To be added in Bib
 # - INC-Source
