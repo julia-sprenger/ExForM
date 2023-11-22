@@ -1,0 +1,7 @@
+EXFOR_ALL_URL : "https://nds.iaea.org/exfor-master/backup/"
+
+GIT_REPO_PATH : "./"  # here
+GIT_REPO_URL : ""
+GIT_EXFOR_DICT_URL : "https://api.github.com/repos/IAEA-NDS/exfor_dictionary"
+
+SSL_VERIFICATION : False
