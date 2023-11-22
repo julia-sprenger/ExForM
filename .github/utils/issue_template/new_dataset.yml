@@ -54,7 +54,7 @@ body:
       # https://github.com/IAEA-NDS/exfor_dictionary/blob/main/src/exfor_dictionary/latest.json or from
       # latest dicts files here: https://www-nds.iaea.org/public/exfor/backup/
       options:
-{{ REFERENCE_TYPE }}
+{{ REFERENCE_TYPES }}
       default: 7
     validations:
       required: false
@@ -67,7 +67,7 @@ body:
       # https://github.com/IAEA-NDS/exfor_dictionary/blob/main/src/exfor_dictionary/latest.json or from
       # latest dicts files here: https://www-nds.iaea.org/public/exfor/backup/
       options:
-{{ JOURNAL }}
+{{ JOURNALS }}
         - Other (please update later on)
     validations:
       required: false
@@ -112,7 +112,7 @@ body:
       # https://github.com/IAEA-NDS/exfor_dictionary/blob/main/src/exfor_dictionary/latest.json or from
       # latest dicts files here: https://www-nds.iaea.org/public/exfor/backup/
       options:
-{{ INSTITUTE }}
+{{ INSTITUTES }}
         - Other (please update later on)
     validations:
       required: false  

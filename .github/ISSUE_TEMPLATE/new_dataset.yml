@@ -54,7 +54,15 @@ body:
       # https://github.com/IAEA-NDS/exfor_dictionary/blob/main/src/exfor_dictionary/latest.json or from
       # latest dicts files here: https://www-nds.iaea.org/public/exfor/backup/
       options:
-
+        - DATA
+        - CONF
+        - BOOK
+        - JOUR
+        - PROG
+        - REPT
+        - THES
+        - PRIV
+        - PREP
       default: 7
     validations:
       required: false
@@ -67,7 +75,322 @@ body:
       # https://github.com/IAEA-NDS/exfor_dictionary/blob/main/src/exfor_dictionary/latest.json or from
       # latest dicts files here: https://www-nds.iaea.org/public/exfor/backup/
       options:
-
+        - Astronomy and Astrophysics
+        - Anais da Academia Brasileira de Ciencias
+        - Atti Academy Naz. Lincei,Rend.,Sci.Fis.,Mat.National 
+        - Atti Academy Sci. Torino, Cl.Sci.Fis.Mat.National 
+        - Memoires de l'Academy Roy.Belg.,Cl.Sci.
+        - Analytical Chemistry
+        - Analitica Chimica Acta
+        - Angewandte Chemie
+        - Acta Chemica Scandinavica
+        - Acta Crystallographica, Part A
+        - Acta Crystallographica, Part B
+        - Journal of the American Chemical Society
+        - ACS Omega
+        - Atomnaya Energiya
+        - Atomnaya Energiya, Supplement
+        - Atomic Energy
+        - Atomic Energy in Australia
+        - Journal of the Atomic Energy Society of Japan
+        - Acta Technica (Budapest)
+        - Astrophysical Journal
+        - Astrophysical Journal, Supplement
+        - Arab Journal of Nuclear Sci.and Application
+        - American Journal of Physics
+        - American Journal of Physics and Applications
+        - Arabian J.for Science and Engineering
+        - Atomki Kozlemenyek Supplement
+        - Atomic Data and Nuclear Data Tables
+        - Annalen der Physik (Leipzig).
+        - Transactions of the American Nuclear Society
+        - Acta Oncologica (Stockholm)
+        - Annals of Physics (New York)
+        - Acta Physica Austriaca
+        - Applied Physics Letters
+        - Acta Physica Polonica, Part A
+        - Acta Physica Polonica, Part B
+        - Acta Physica Polonica, Part B Proceeding Series
+        - Applied Physics A
+        - Applied Physics B
+        - Acta Polytechnica Scandinavica
+        - Acta Radiologica Supplement
+        - Annual Review of Nuclear and Part.Sci.
+        - Acta Physica Sinica
+        - Acta Physica Slovaca
+        - Astrophysics and Space Science
+        - Annales de la Societe Scientifique de Bruxelles
+        - Atompraxis
+        - Atomtechnikai Tajekoztato
+        - Atomwirtschaft, Atomtechnik
+        - Australian Journal of Physics
+        - Bulletin of the American Physical Society Ser.II
+        - Bull.Russian Academy of Sciences - Physics
+        - Bull.Research Council of Israel, Sect. F
+        - Bull.of the Chemical Soc.of Japan
+        - Bull.de la Classe des Sci.,Academy Roy.Belgique
+        - BgNS Transactions
+        - Bull. of the Israel Physical Society
+        - Bezpecnost Jaderne Energie
+        - Bulgarian J.of Physics
+        - Transactions of the Bose Research Institute ,Calcutta
+        - Bull.de l'Academy Pol.Sci., Chimique
+        - Bull.de l'Academy Pol.Sci.,Math.,Astr.,Physics 
+        - Bull.de l'Academy Pol.Sci.,Ser.Sci.Techniques
+        - Bolletino della Societa Italiana di Fisica
+        - Bull.Societe Royale des Sciences de Liege
+        - Chemia Analityczna
+        - Ciencia e Cultura (Sao Paulo)
+        - Chinese Journal of Physics (Taiwan)
+        - Canadian Journal of Chemistry
+        - Canadian Journal of Physics
+        - Chemistry Letters
+        - Nuclear Physics Review
+        - Nuclear Science and Techniques (Shanghai).
+        - Computer Physics Communications
+        - Chinese Physics B
+        - Chinese Physics C
+        - Chinese Physics Letters
+        - Comptes Rendus Academy Bulgare Sci.
+        - Compt.Rend.(Doklady) de l'Academy des Sci.de l'URSS
+        - Current Science
+        - Abstracts of papers, American Chemical Soc.
+        - Atomic Energy Science and Technology
+        - Collection of Czech.Chemical Communications
+        - Dissertation Abstracts B (Sciences)
+        - Doklady Akademii Nauk
+        - Energia es Atomtechnika
+        - East European Journal of Physics
+        - Ergebnisse der Exakten Naturwissenschaften
+        - Energia Nucleare (Milan)
+        - Europ.J.of Nuclear Medicine and Molecular Imaging
+        - European Physical Journal A: Hadrons and Nuclei
+        - Europ. Physical Journal C: Particles and Fields
+        - European Physical Journal N: Nuclear Sci.Technol.
+        - European Physical Journal Plus
+        - Earth and Planetary Sci.Letters
+        - J.of Engineering Sciences, University of Riyadh
+        - Experientia
+        - Few-Body Systems
+        - Few-Body Systems, Supplement
+        - Fizika Elementarnykh Chastic i Atomnogo Yadra
+        - Fiz. Elementarnykh Chastic i Atomn.Yadra,Letters
+        - Fortschritte der Physik
+        - Fusion Engineering and Design
+        - Fizika B
+        - Fizika, Supplement
+        - Fizika Metallov i Metallovedeniya
+        - Fusion Science and Technology
+        - Fysisk Tidsskrift
+        - Fizika Tverdogo Tela
+        - Geokhimiya
+        - Godishnik na Sofijskija University 'Kliment Ohridski'
+        - Helvetica Chimica Acta
+        - He Huaxue yu Fangshe Huaxue
+        - Hyperfine Interactions
+        - Health Physics
+        - Helvetica Physica Acta
+        - Proc.Indian Assoc.for Cultiv.of Sci.
+        - Instruments and Experimental Techniques
+        - Trudy Institute Fiziki Gruzinskoi Akad.Nauk
+        - Israel Journal of Mathematics
+        - Indian Journal of Physics
+        - International Journal of Modern Physics, Conference Series
+        - International Journal of Modern Physics, Part E
+        - Instruments
+        - Isotopes in Envir.and Health Studies
+        - Indian Journal of Pure and Applied Physics
+        - IEEE Transactions on Nuclear Science
+        - Indian Science Abstracts
+        - Israel J.of Chemistry
+        - Israel J.of Physics
+        - Izv.Vysshikh Uchebnykh Zavedenii,Ser.Yad.Energy 
+        - Izv.Vysshikh Uchebnykh Zavedenii,Ser.Fizika
+        - Izv.Azerb.Akad.Nauk,Ser.Fiz.-Tekh.i Mat.
+        - Izvestiya Akademii Nauk Resp.Kaz.,Ser.Fiz.-Mat.
+        - Izv.Latviiskoi Akad.Nauk
+        - Izotopy v SSSR
+        - Izv. Rossiiskoi Akademii Nauk, Ser.Fiz.
+        - J.of Applied Crystallography
+        - Yadernaya Energetika
+        - Journal of Alloys and Compounds
+        - Journal of Applied Physics
+        - J.of the Bangladesh Academy of Sciences
+        - J.of Research of National Bureau of Standards
+        - J.Chemical Physics
+        - Jaderna Energiya, Bulgarian Academy Sci.
+        - JETP Letters
+        - J.of the Electro-Chemical Society Belgium
+        - Journal of Experimental and Theoretical Physics
+        - Journal of the Franklin Institute
+        - Journal of Geophysical Research, Part A
+        - Journal of Geophysical Research, Part B
+        - Journal of Geophysical Research, Part C
+        - Japanese Journal of Applied Physics
+        - Journal of Lanzhou University , Natural Science Ed.
+        - Journal of Magnetism and Magnetic Materials
+        - International J.of Mass Spectrometry and Ion Physics
+        - Journal of the Mass Spectrometry Soc. of Japan
+        - Journal of Non-Crystalline Solids
+        - Journal of Nuclear Materials
+        - Journal of Nuclear and Radiochemical Sciences
+        - J.of the Electro-Chemical Society (USA)
+        - Journal of the Physical Society of Japan
+        - Journal of the Physical Society of Japan, Suppl.
+        - JPS Conference Proceedings
+        - J.of Research of National Institute Stand.+Technology
+        - Journal of Radioanalytical and Nuclear Chemistry
+        - Journal of Sichuan University , Natural Science Ed.
+        - Kgl.Danske Videns.Selskab.Mat.-Fys.Medd.
+        - KFKI Kozlemenyek
+        - KFK-Nachrichten
+        - Journal of the Korean Physical Society
+        - Kristallografiya
+        - Kerntechnik
+        - Vestnik Kiev State University 
+        - Kexue Tongbao (Chinese Sci.Letters)
+        - Issled.po Neitr.Fiz., Trudy Fiz. Institute Lebedeva
+        - Lunar and Planetary Science Conferences
+        - Monatsber.d.Deutschen Akad.Wiss.Berlin
+        - Mendeleev Communications
+        - Medical Physics
+        - Metrologia
+        - Matematicko-Fyzikalny Casopis
+        - Magyar Fizikai Folyoirat
+        - Modern Physics Letters A
+        - Memoirs of Physics Facility Moscow State University 
+        - Memorie della Societa Astronomica Italiana Supp.
+        - Memoirs Faculty of Sci., Kyoto University ,Ser.Physics 
+        - Memoires de la Soc.Royale des Sci.de Liege
+        - Moscow University Physics Bulletin
+        - Proc.Koninklijke Nederlandse Akad.Wetenschappen
+        - Nuovo Cimento C
+        - Lettere al Nuovo Cimento
+        - Rivista del Nuovo Cimento
+        - Notas de Fisica
+        - Nuclear Data Sheets
+        - Nuklearna Energija
+        - International Journal of Nuclear Sci.& Engineering
+        - Nuclear Engineering and Technology
+        - Nuclear Instrum. Methods in Physics Research , Sect.A
+        - Nuclear Instrum. Methods in Physics Research , Sect.B
+        - Nuclear India
+        - Nukleonika
+        - Nippon Kagaku Kaishi
+        - Nukleon
+        - Nuklearmedizin
+        - Nuclear Physics, Section A
+        - Nuclear Physics, Section B
+        - New Physics: Sae Mulli
+        - Journal of Nuclear and Radiation Physics
+        - Nuclear Science Abstracts
+        - Nuclear Science and Applications (Dhaka)
+        - Nuclear Science and Engineering
+        - Jour. of Nuclear Science and Technology
+        - Progress in Nuclear Science and Technology
+        - Nuclear Technology
+        - (Chinese J.of) Nuclear Techniques, Shanghai.
+        - Nederlands Tijdschrift voor Natuurkunde
+        - Nukleonik
+        - Naturwissenschaften
+        - Transactions of the New York Academy of Sciences
+        - Oesterr.Akad.Wiss.,Math-Naturw.Kl.,Sitzungsber.
+        - Oesterr.Akad.Wiss.,Math-Naturw.Kl.,Anzeiger
+        - Physics of Atomic Nuclei
+        - Physikalische Blaetter
+        - Physics in Canada
+        - Journal of Physical Chemistry
+        - Physical and Chemical News (Morocco)
+        - Postepy Fizyki
+        - Physicalia (Journal of the Belgian Physics Soc.)
+        - Physica (Utrecht)
+        - Proc. of the Indian Academy Sciences, Sect. A
+        - Prikladnaya Yadernaya Spektroskopiya
+        - Physics Letters, Section A
+        - Physics Letters,Section B
+        - Proc. of the National Academy of Sciences U.S.A.
+        - Proceedings of the Pakistan Academy of Sciences
+        - Physics of Particles and Nuclei
+        - Physics of Particles and Nuclei Letters
+        - Quarterly Rev.Scientific Publ.Polish Academy Sci.
+        - Physical Review, Part A, General Physics
+        - Physical Review, Part B, Condensed Matter
+        - Physical Review, Part C, Nuclear Physics
+        - Physical Review, Part D, Particles and Fields
+        - Physical Review Letters
+        - Pramana
+        - Physica Scripta
+        - Planetary and Space Science
+        - Physica Status Solidi
+        - Physica Status Solidi A
+        - Physics Today
+        - Pribory i Tekhnika Eksperimenta
+        - Progress of Theoretical and Experimental Physics
+        - Progress of Theoretical Physics, Suppl.
+        - Physikalische Zeitschrift
+        - Radiokhimiya
+        - Brazilian Journal of Physics
+        - Radiochimica Acta
+        - Proceedings in Radiochemistry
+        - Radiochemistry
+        - Referativnyi Zhurnal, Fizika
+        - Reactor and Fuel-Processing Technology
+        - Radioisotopes
+        - Radioaktivni Izotopi i Zracenja.
+        - Romanian Journal of Physics
+        - Romanian Journal of Physics, Supplement
+        - Radiation Measurements
+        - Revista Mexicana de Fisica
+        - Review of Modern Physics.
+        - Radiation Physics and Chemistry
+        - Revista Portugesa de Qimica
+        - Journal of Radiation Protection and Research
+        - Radiation Research
+        - Romanian Reports in Physics
+        - Rumanian Scientific Abstracts, Natural Sciences
+        - Review of Scientific Instruments
+        - Review of Science Research
+        - South African Journal of Science
+        - South African Journal of Physics
+        - Science
+        - Science in China, Series A
+        - Surface and Interface Analysis
+        - Teoreticheskaya i Matematicheskaya Fizika
+        - The Nucleus (Lahore)
+        - Facility of Engineering, Tohoku University Tech. Report
+        - Chalmers Tekniska Hoegskolas Handlingar
+        - Uspekhi Fizicheskikh Nauk
+        - Ukrainskii Fizichnii Zhurnal
+        - Ukrainian Journal of Physics
+        - Naukovyi Visnyk Uzhgorods'kogo University , Ser.Fiz.
+        - Vestnik Akademii Nauk SSSR
+        - Voprosy Atomnoy Nauki i Tekhniki, Seriya Fiziki
+        - Vopr.Atomn.Nauki i Tekhn.,Ser.Yad..Fiz..Issledo.
+        - Vopr.At.Nauki i Tek.,Ser.Fiz.Vys.Ene.i Atom.Yad.
+        - Voprosy Atomn.Nauki i Tekhniki,Ser.Fiz.Yad.Reak.
+        - Vestsi Ak.Navuk, Ser.Fiz.Energy 
+        - Verhandlung.Deutsch.Physik.Ges.
+        - Vestnik Leningradskogo University , Fizika, Khimiya
+        - Vestnik Moskovskogo University , Seriya Fiz.Astron.
+        - Voprosy Teoreticheskoy i Yadernoy Fiziki
+        - Wuli (Physics)
+        - Wiss.Zeitschr.der University Dresden
+        - Yadernaya Fizika
+        - Yaderna Fizika ta Energetika
+        - Vop.At.Nauki i Tekhn.,Ser.Yaderno-Reak.Konstanty
+        - Yuan Tzu Neng (Atomic Energy)
+        - Zeitschrift fuer Angewandte Physik
+        - Zeitschrift fuer Elektrochemie
+        - Zhurnal Eksper. i Teoret. Fiz., Pisma v Redakt.
+        - Zhurnal Eksperimental'noi i Teoret. Fiziki
+        - Z.fuer Kristallographie
+        - Z.fuer Angewandte Mathematik und Mechanik
+        - Zeit. fuer Angewandte Mathematik und Physik
+        - Zeitschrift fuer Naturforschung, Section A
+        - Zeitschrift fuer Naturforschung, Section B
+        - Z. Physikalische Chemie (Leipzig)
+        - Z. Physikalische Chemie (Frankfurt)
+        - Zhurnal Tekhnicheskoi Fiziki
         - Other (please update later on)
     validations:
       required: false
@@ -112,7 +435,1075 @@ body:
       # https://github.com/IAEA-NDS/exfor_dictionary/blob/main/src/exfor_dictionary/latest.json or from
       # latest dicts files here: https://www-nds.iaea.org/public/exfor/backup/
       options:
-
+        - University of Alberta, Edmonton, Alberta
+        - Bishop University, Lennoxville, Quebec
+        - Canada
+        - A.E.C.L. Commercial Products, Ottawa, Ontario
+        - A.E.C.L., Chalk River, Ontario
+        - Carleton University, Ottawa, Ontario
+        - University of Guelph, Guelph, Ontario
+        - Laval University, Sainte-Foy, Quebec
+        - McGill University, Montreal,Quebec
+        - McMaster University, Hamilton, Ontario
+        - Sir George Williams University , Montreal, Quebec
+        - University of Manitoba, Cyclotron Laboratory , Winnipeg, Manitoba
+        - University of Montreal, Montreal, Quebec
+        - Ecole Polytechnique de Montreal, Quebec
+        - National Research Council, Montreal Laboratory , Quebec
+        - National Research Council, Ottawa, Ontario
+        - University of Ottawa, Ottawa, Ontario
+        - A.E.C.L., Whiteshell Nuclear Research Establ.,Pinaua,Manitoba
+        - Queen's University , Kingston, Ontario
+        - University of Saskatchewan, Saskatoon, Saskatchewan
+        - Simon Frazer University, Burnaby, B.C.
+        - Saint Mary's University , Halifax, Nova Scotia
+        - Tri University Meson Facility, Vancouver, B.C.
+        - University of Toronto, Toronto, Ontario
+        - University of British Columbia, Vancouver, B.C.
+        - University of Western Ontario, London, Ontario
+        - University of Victoria, Victoria, B.C.
+        - U.S. Army Aberdeen Research + Development Center, Aberdeen, MD
+        - Exxon Nuclear Idaho Co., ID
+        - U.S. Atomic Energy Commission, Washington, DC
+        - Air Force Institute Technology, Wright-Patterson AFB, OH
+        - Air Force Weapons Laboratory , Kirkland AFB, Albuquerque, NM
+        - Aerojet-General Nucleonics, San Ramon, CA
+        - Rockwell International , Energy Systems Group, Canoga Park, CA
+        - Argonne National Laboratory - West, Idaho Falls, ID
+        - American Institute of Physics, New York, NY
+        - State University of New York, Albany, NY
+        - Alabama State University, Montgomery, AL
+        - Amherst College, Amherst, MA
+        - American Universit, Washington, DC
+        - U.S. Naval Academy, Annapolis, MD
+        - Andrews University , Berrien Springs, MI
+        - Argonne National Laboratory, Argonne, IL
+        - Atomic Power Development Associates, Detroit, MI
+        - Atlantic Richfield Hanford Company, Richland, WA
+        - University of Arkansas, Fayetteville, AR
+        - Aerospace Research Labs, Wright-Patterson A.F. Base, OH
+        - Astra Inc., Raleigh, NC
+        - Arizona State University, Tempe, AZ
+        - Auburn University, Auburn, AL
+        - Babcock and Wilcox, Lynchburgh, VA
+        - Bartol Research Foundation, Swarthmore, PA
+        - Battelle Memorial Institute, Columbus, OH
+        - J.T.Baker Chemical Company, Phillipsburg, NJ
+        - Boston College, Chestnut Hill, MA
+        - AT&T Bell Laboratories, Murray Hill, NJ
+        - Bettis Atomic Power Laboratory , Westinghouse, Pittsburgh,PA
+        - Brooklyn College of the C.U.N.Y., Brooklyn, NY
+        - Brookhaven National Laboratory, Upton, NY
+        - Pacific Northwest Laboratories, Richland, WA
+        - Boeing Scientific Research Labs, Seattle, WA
+        - Lawrence Berkeley National Laboratory, Berkeley, CA
+        - Ballistic Research Labs, Aberdeen Proving Grounds, MD
+        - Brown University, Providence, RI
+        - Boston University, Boston, MA
+        - Ball State University , Muncie, IN
+        - Brigham Young University, Provo, UT
+        - California Institute of Technology, Pasadena, CA
+        - Carnegie Institute of Technology, Pittsburgh, PA,
+        - Carnegie Institute, Washington, DC
+        - Combustion Engineering, Windsor, CN
+        - Thomas Jefferson Nat'l Accelerator Facility , Newport News, VA
+        - California State University, Northridge, CA
+        - University of Chicago, IL
+        - University of California, Los Angeles, CA
+        - Clinton Labs, Knoxville, TN
+        - Clark University, Worcester, MA
+        - Cleveland State University, Cleveland, OH
+        - University of Colorado, Boulder, CO
+        - Central Michigan University, Mt.Pleasant, MI
+        - Columbia University, New York, NY
+        - Convair, San Diego, CA
+        - Cornell University, Ithaca, NY
+        - Courant Institute of Mathematical Sciences, New York, NY
+        - California Research and Development Co., Livermore,CA
+        - University of California, San Diego, CA
+        - Case Western Reserve University, Cleveland, OH
+        - Columbia Scientific Industries Corp., Lafayette, LA
+        - Colorado School of Mines, Golden, CO
+        - California State University, Sacramento, CA
+        - California State University, Los Angeles, CA
+        - Colorado State University, Fort Collins, CO
+        - Catholic University of America, Washington, DC
+        - Curtiss-Wright Corp., Quehanna, PA
+        - University of California, Davis, CA
+        - Duke University, Durham, NC
+        - University of Dallas, Irving, TX
+        - Denison University, Granville, OH
+        - Department of Defense, DASA, Washington, DC
+        - Department of Energy, Washington, DC
+        - Diamond Ordnance Fuse Laboratory
+        - Dow Chemical Co., Rocky Flats, CO
+        - E G+G Energy Measurements, Santa Barbara, CA
+        - Emory University, Atlanta, GA
+        - U.S. Energy Research & Development Adm., Washington, DC
+        - East Texas State University
+        - University of Florida, Gainesville, FL
+        - Florida State University, Tallahassee, FL
+        - Gulf Energy and Environmental Systems, San Diego, CA
+        - General Dynamics, Fort Worth, TX
+        - General Electric, Aircraft Nuclear Prop.Department , Ohio
+        - General Electric Breeder React.Dev.Op., Sunnyvale, CA
+        - General Electric Company, San Jose, CA
+        - General Electric, Space Science Laboratory , PA
+        - General Electric, Nuclear Materials, PA
+        - University of Georgia, Athens, GA
+        - General Electric, Nucleonics Laboratory , Pleasanton, CA
+        - General Electric, Schenectady, NY
+        - General Electric, Vallecitos Atomic Laboratory , CA
+        - Gulf General Atomic, San Diego, CA
+        - Georgia Institute of Technology, Atlanta, GA
+        - Gulf Radiation Technology, San Diego, CA
+        - Nasa Goddard Space Flight Center, Greenbelt, MD
+        - Georgia State University, Atlanta, GA
+        - George Washington University, Washington, DC
+        - Hanford Engineering Development Laboratory , Richland, WA
+        - Hazelton Nuclear Science Corp., Palo Alto, CA
+        - University of Houston, Houston, TX
+        - Hope College, Holland, MI
+        - Harvard University, Cambridge, MA
+        - U.S.A.E.C. Health and Safety Laboratory , NY
+        - Institute for Advanced Studies, Princeton, NJ
+        - I B M Research Laboratory , San Jose, CA
+        - Illinois Institute of Technology, Chicago, IL
+        - Idaho National Laboratory, Idaho Falls, ID
+        - Indiana University, Bloomington, IN
+        - University of Iowa, Iowa City, IA
+        - Intelcom Radiation Technology, San Diego, CA
+        - University of California, Irvine, CA
+        - Indiana University, South Bend, IN
+        - Idaho State University, Pocatello, ID
+        - Johns Hopkins University, Baltimore, MD
+        - University of Kansas, Lawrence, KS
+        - Knolls Atomic Power Laboratory, Schenectady, NY
+        - Kent State University, Kent, OH
+        - Kansas State University, Manhattan, KS
+        - University of Kentucky, Lexington, KY
+        - Langley Research Center, NASA Langley Station, VA
+        - Los Alamos National Laboratory, NM
+        - Lockheed Missiles and Space Division , Palo Alto, CA
+        - Lockheed Aircraft Corp., Sunnyvale, CA
+        - Loyola University, Los Angeles, CA
+        - NASA-Lewis Research Center, Cleveland, OH
+        - Lawrence Livermore National Laboratory, Livermore, CA
+        - Louisiana State University, Baton Rouge, LA
+        - University of Massachusetts at Lowell, MA
+        - University of Louisville, Louisville, KY
+        - MAGI, Elmsford, NY
+        - Marquette University, Milwaukee, WI
+        - Massachusetts General Hospital, Boston, MA
+        - Michigan Technological University, Houghton, MI
+        - University of Michigan, Dearborn, MI
+        - University of Michigan, Ann Arbor, MI
+        - University of Minnesota, Minneapolis, MN
+        - University of Missouri, Columbia, MO
+        - Massachusetts Institute of Technology, Cambridge, MA
+        - Miami University, Oxford, OH
+        - Mound Laboratory, Miamisburg, OH
+        - University of Maryland, College Park, MD
+        - Mount Sinai Medical Center, Miami Beach, FL
+        - Mississippi State University, Mississippi State, MS
+        - Michigan State University, East Lansing, MI
+        - Idaho Nuclear Corp., Idaho Falls, ID
+        - Middle Tennessee State University, Murfreesboro, TN
+        - Montana State University, Missoula, MT
+        - Murray State University, Murray, KY
+        - Fermi National Laboratory, Batavia, IL
+        - NASA, Washington, DC
+        - University of North Carolina, Chapel Hill, NC
+        - North Carolina Central University, Durham, NC
+        - North Carolina State University, Raleigh, NC
+        - Nuclear Development Associates Inc.
+        - U.S. Army Nuclear Defence Laboratory , Edgewood Arsenal, MD
+        - North Eastern University, Boston, MA
+        - U.S. Nuclear Effects Laboratory , Edgewood Arsenal, MD
+        - North Georgia College, Dahlonega, NC
+        - National Institutes of Health, Bethesda, MD
+        - National Institute of Standards & Techn., Gaithersburg, MD
+        - Northern Illinois University, Dekalb, IL
+        - New Mexico State University, Las Cruces, NM
+        - University of New Mexico, Albuquerque, NM
+        - U.S. Navy Ordinance Laboratory , Silver Springs, MD
+        - University of Notre Dame, Notre Dame, IN
+        - U.S. Naval Radiolog. Defense Laboratory , San Francisco, CA
+        - U.S. Naval Research Laboratory , Washington, DC
+        - North Texas State University, Denton, TX
+        - Northwestern University, Evanston, IL
+        - State University of New York, Buffalo, NY
+        - New York University, New York, NY
+        - Oak Ridge Associated Universities, Oak Ridge, TN
+        - Oberlin College, Oberlin, OH
+        - Ohio University, Athens, OH
+        - University of Oklahoma, Norman, OK
+        - Nuclear Data Project, ORNL, Oak Ridge, TN
+        - University of Oregon, Eugene, OR
+        - Oak Ridge National Laboratory, Oak Ridge, TN
+        - Radiation Shielding Inf. Center, ORNL, Oak Ridge, TN
+        - Oregon State University, Corvallis, OR
+        - Ohio State University, Columbus, OH
+        - Picatinny Arsenal, Dover, NJ
+        - University of Pennsylvania, Philadelphia, PA
+        - Phillips Petroleum Co., Bartletsville, OK
+        - Puerto Rico
+        - Pratt + Whitney, Middletown, CT
+        - Pennsylvania State University, University Park, PA
+        - Princeton University, Princeton, NJ
+        - University of Pittsburgh, Pittsburgh, PA
+        - Purdue University, West Lafayette, IN
+        - The Rand Corporation, Santa Monica, CA
+        - Radiation Dynamics, Inc., Westbury, NY
+        - University of Redlands, Redlands, CA
+        - Redstone Arsenal, AL
+        - Reno Metallurgical Research Center, Reno, NV
+        - Division of Research, USAEC, Washington, DC
+        - Rhode Island University, Kingston, RI
+        - Rice University, Houston, TX
+        - Richland Operations Office, Richland, WA
+        - University of Rochester, Rochester, NY
+        - Rensselaer Polytechnic Institute, Troy, NY
+        - Rutgers University, New Brunswick, NJ
+        - Science Applications International Corp., San Diego, CA
+        - Sandia National Laboratory, Albuquerque, NM
+        - University of South Carolina, Columbia, SC
+        - San Diego State College, San Diego, CA
+        - National Nuclear Data Center, BNL, Upton, NY
+        - San Jose State University, San Jose, CA
+        - Saint Louis University, Saint Louis, MO
+        - Southern Methodist University, Dallas, TX
+        - Southern University Nuclear Institute , Baton Rouge, LA
+        - Space Nuclear Propulsion Office, Cleveland, OH
+        - Socony Mobil Oil Co., Dallas, TX
+        - SPire Corp., Bedford, MA
+        - Space Radiation Effects Laboratory , Newport News, VA
+        - Sanford Underground Research Facility, Lead, SD
+        - Stanford Research Institute , Menlo Park, CA
+        - Savannah River Laboratory , E.I. Dupont, Aiken, SC
+        - State University of New York, Stony Brook, NY
+        - Stanford University, Stanford, CA
+        - Saint Mary's College of Maryland, St. Mary's City, MD
+        - State University of New York, Binghamtom, NY
+        - Iowa State University, Ames, IA
+        - University of Southwestern Louisiana, Lafayette, LA
+        - Syracuse University, Syracuse, NY
+        - Texas A & M University, College Station, TX
+        - Temple University, Philadelphia, PA
+        - University of Tennessee, Knoxville, TN
+        - University of Texas, Austin, TX
+        - Division of Technical Information , USAEC, Oak Ridge, TN
+        - Texas Nuclear Corp., Austin, TX
+        - Triangle Universities Nuclear Laboratory , Durham, NC
+        - T R W, Redondo Beach, CA
+        - Tennessee Technological University , Cookeville, TN
+        - Tulane University, New Orleans, LA
+        - University of Alabama, AL
+        - Arizona University , Tucson, AZ
+        - United Nuclear Corp., Tuxedo, NY
+        - University of Cincinnati, Cincinnati, OH
+        - University of Connecticut, Groton, CT
+        - Union Carbide, Sterling Forest Research Center, Tuxedo,NY
+        - University of California, Berkeley, CA
+        - University of Illinois, Urbana-Champaign, IL
+        - University of Idaho, Moscow, ID
+        - University of Massachusetts, Amherst, MA
+        - University of Montana, Helena, MT
+        - University of Nebraska, Lincoln, NE
+        - United Nuclear Corp., Elmsford, NY
+        - University of New Hampshire, Durham, NH
+        - Ursinus College, Collegeville, PA
+        - United States of America
+        - University of Southern California, Los Angeles, CA
+        - Utah State University, Loagn, UT
+        - University of Wyoming, Laramie, WY
+        - Vanderbilt University, Nashville, TN
+        - Virginia Polytechnic Institute ,Blacksburg, VA
+        - University of Virginia, Charlottesville, VA
+        - Westinghouse Astronuclear Laboratory , Pittsburgh, PA
+        - Westinghouse Atomic Power Division , Pittsburgh, PA
+        - Washington University, St.Louis, MO
+        - Watertown Arsenal, Watertown, MA
+        - University of Washington, Seattle, WA
+        - Wayne State University, Detroit, MI
+        - Westinghouse Research Laboratory , Pittsburgh, PA
+        - Westinghouse Advanced Reactor Division , Pittsburgh, PA
+        - West Georgia College, Carrolton, GA
+        - University of Wisconsin, Madison, WI
+        - Western Kentucky University, Bowling Green, KY
+        - Wesleyan University, Middletown, CT
+        - College of William and Mary, Williamsburg, VA
+        - Western Michigan University, Kalamazoo, MI
+        - Worcester Polytechnic Institute, Worcester, MA
+        - Western Reserve University, Cleveland, OH
+        - White Sands Missile Range, White Sands, NM
+        - Washington State University, Pullman, WA
+        - University of West Virginia, Morgentown, WV
+        - Western Washington State College, Bellingham, WA
+        - Yale University, New Haven, CT
+        - Atominstitut der Technischen Universitaet Wien,Vienna
+        - Austria
+        - Technische Universitaet Graz, Graz
+        - Johannes-Kepler-Universitaet, Linz
+        - Oest.Forschungszentrum Seibersdorf, Wien+Seibersdorf
+        - Technische Universitaet Wien, Vienna
+        - Universitaet Graz, Graz
+        - Universitaet Wien, Vienna
+        - Belgium
+        - Belgonucleaire
+        - Universite Libre de Bruxelles, Bruxelles
+        - Universiteit Gent, Gent
+        - Katholieke University Leuven, Leuven
+        - University of Liege, Liege
+        - Catholic University of Louvain, Louvain-la-Neuve
+        - SCK CEN (Belgian Nuclear Research Centre), Mol
+        - University "Notre Dame de la Paix", Namur
+        - Institute de Physique Corpusculaire, Louvain-la-Neuve
+        - University Instelling, Anvers
+        - Union Miniere du Haut Katanga, Bruxelles
+        - Vrije Universiteit Brussels, Brussels
+        - Aarhus University, Aarhus
+        - University of Copenhagen, Copenhagen
+        - Denmark
+        - Niels Bohr Institute , Copenhagen
+        - Nordita, Denmark
+        - Riso, Roskilde
+        - Ireland
+        - University College, Dublin
+        - GIP Arronax, Saint Herblain
+        - Universite de Bordeaux
+        - CEA/DAM Ile-de-France, Bruyeres-le-Chatel, Arpajon
+        - CEA/Cadarache
+        - Universite de Caen
+        - Universite Blaise Pascal, Clermont-Ferrand
+        - Centre d'Etudes et de Rech. par Irrad., CNRS-Orleans
+        - Centre Sci. Nuclear et Sci. Matiere (CSNSM), Orsay
+        - Electricite de France, Paris
+        - Ecole Normale Superieure, Paris
+        - CEA/Fontenay-aux-Roses
+        - France
+        - Grand Accelerateur National d'Ions Lourds, Caen
+        - Centre d'Etudes Nucleaires de Bordeaux-Gradignan
+        - Universite Joseph Fourier, Grenoble
+        - Institut Laue-Langevin, Grenoble
+        - CEA/Valduc, Is-sur-tille
+        - Laboratory de Recherche des Musees de France, Paris
+        - Universite de Lyon
+        - Universite de Nantes
+        - Universite de Paris
+        - College de France, Paris
+        - CEA/Saclay
+        - IPHC, Strasbourg
+        - Universite de Toulouse
+        - Universite de Strasbourg, Strasbourg
+        - Alkem GMBH, Leopoldshafen
+        - Brown-Boveri/Krupp, Mannheim
+        - Hahn-Meitner-Institute , Berlin
+        - Ruhr-Universitaet Bochum
+        - University of Bonn
+        - Deutsches Krebsforschungszentrum, Heidelberg
+        - Dortmund University , F.R.Germany
+        - Technische Universitaet Dresden, Dresden and Pirna
+        - Freiburg im Breisgau, Universitaet
+        - J.W.Goethe University , Frankfurt/Main
+        - Max-Planck-Institut fuer Plasmaphysik, Garching
+        - Germany
+        - University of Goettingen
+        - GSI Helmholtzzent. f. Schwerionenforschung, Darmstadt
+        - Hamburg, Universitaet
+        - Heidelberg, Universitaet
+        - Informationssystem Karlsruhe,
+        - Interatom, Bensberg
+        - Jena University 
+        - Justus Liebig University , Giessen
+        - Forschungszentrum Juelich, Juelich
+        - Karlsruhe Institute of Technology (KIT)
+        - GKSS, Geesthacht
+        - University of Kiel, Kiel
+        - Universitaet zu Koeln, Koeln
+        - Karlsruhe, University 
+        - Ludwig-Maximilians Universitaet Muenchen
+        - University of Marburg
+        - Johannes Gutenberg-Universitaet Mainz, Mainz
+        - Max-Planck-Institut fuer Kernphysik, Heidelberg
+        - Max-Planck-Institut fuer Chemie, Mainz
+        - Westfaelische Wilhelms-Universitaet Muenster,Muenster
+        - Technische Universitaet Muenchen
+        - University of Munich, Munich
+        - Physikalisch-Technische Bundesanstalt, Braunschweig
+        - University of Saarland, Saarbruecken
+        - Forschungszentrum fur Umwelt u. Gesundheit,Neuherberg
+        - Siemens, Erlangen
+        - Tech.Hochschule, Aachen
+        - Technische Universitaet Braunschweig
+        - Technische Universitaet Darmstadt
+        - Universitaet Stuttgart
+        - Tech.University , Berlin
+        - Universitaet Tuebingen
+        - Universitaet Duisburg-Essen
+        - University of Erlangen-Nuernberg
+        - University Hannover (previously Tech.University Hannover)
+        - University Siegen
+        - Wuerzburg, Universitaet
+        - Helmholtz-Zentrum Dresden-Rossendorf, Dresden
+        - Aristotle University of Thessaloniki
+        - NCSR Demokritos, Aghia Paraskevi, Athens
+        - Greece
+        - University of Ioannina, Ioannina
+        - National Technical University of Athens, Athens
+        - Iceland
+        - Universita degli Studi di Bari + INFN Bari
+        - ENEA Centro Ricerche Energia di Bologna
+        - Universita degli Studi di Cagliari + INFN Cagliari
+        - Universita degli Studi di Camerino, Camerino
+        - Centro di Studi Nucleari della Casaccia, Rome
+        - Universita degli Studi di Catania + INFN Catania
+        - Centro Informazioni Studi ed Esperienze (CISE), Milan
+        - ENEA Centro Ricerche Frascati, Frascati
+        - ENI, San Donato, Milan
+        - Universita degli Studi di Enna "Kore", Enna
+        - Universita degli Studi di Firenze + INFN Firenze
+        - INFN Laboratori Nazionali di Frascati, Frascati
+        - Universita degli Studi della Campania, Caserta
+        - Universita degli Studi di Genova + INFN Genova
+        - Istituto Superiore di Sanita, Roma
+        - Italy
+        - Universita degli Studi Lecce + INFN Lecce
+        - LINFN Laboratori Nazionali del Gran Sasso, Assergi
+        - INFN Laboratori Nazionali del Sud, Catania
+        - Universita degli Studi di Messina, Messina
+        - Universita degli Studi di Milano + INFN Milano
+        - Politecnico di Milano
+        - University degli Studi di Napoli Federico II + INFN Napoli
+        - Osservatorio Astronomico di Collurania, Teramo
+        - INFN Laboratori Nazionali di Legnaro, Legnaro, Padova
+        - Universita degli Studi di Pavia + INFN Pavia
+        - University degli Studi di Roma "La Sapienza" + INFN Roma 1
+        - Sorin Nuclear Research Centre Saluggia
+        - Centro Sicil.di Fisica Nuclear CSFNSM, Catania
+        - Universita degli Studi di Trieste + INFN Trieste
+        - Politecnico di Torino
+        - Universita degli Studi di Torino + INFN Torino
+        - Universita di Bologna + INFN Bologna
+        - Universita degli Studi di Udine + INFN Udine
+        - Universita degli Studi di Perugia + INFN Perugia
+        - Universita degli Studi di Padova + INFN Padova
+        - University degli Studi di Roma "Tor Vergata" + INFN Roma 2
+        - National Institute of Adv.Ind.Sci.Tech.(AIST), Tsukuba
+        - Ashikaga Institute of Technology, Ashikaga, Tochigi
+        - Akita University , Akita
+        - Aoyama Gakuin University , Tokyo
+        - Chiba Institute of Technology, Narashino, Chiba
+        - Fuji Electric
+        - Fukuoka University , Fukuoka
+        - Gifu College of Medical Technologies, Gifu
+        - Hiroshima University , Hiroshima and Higashi-Hiroshima
+        - University of Hyogo, Himeji
+        - Hokkaido Univesity, Sapporo
+        - Hosei University, Tokyo
+        - International Christian University , Mitaka, Tokyo
+        - RIKEN (Institute of Physical and Chemical Research), Wako
+        - National Institute for Quantum & Radiol.Sci.& Tech., Chiba
+        - Institute of Solid State Physics, University of Tokyo
+        - Japan Atomic Energy Agency (JAEA)
+        - Electoric Pow.Dev.Corp., AED, Tokyo
+        - Japan
+        - Japan Synchrotron Rad.Research Institute (JASRI), Hyogo
+        - Juntendo University , Chiba
+        - High Energy Accelerator Research Org. (KEK), Tsukuba
+        - University of Occupational and Environmental Health, Kitakyushu
+        - Kinki University ,Higashi Osaka
+        - Kanazawa University , Kanazawa
+        - Konan University , Kobe
+        - Kobe Tokiwa University , Kobe
+        - Kyoto University , Kyoto
+        - Kyoto University of Education, Kyoto
+        - Kyoritsu College of Pharmacy, Tokyo
+        - Kyoto Prefectural University , Kyoto
+        - Kyushu University , Fukuoka
+        - University of Miyazaki, Miyazaki
+        - Nagoya University , Nagoya
+        - National Astronomical Observatory of Japan, Mitaka
+        - Oita National College of Technology, Oita
+        - Nagasaki Institute of Applied Science, Nagasaki
+        - National Institute for Fusion Science, Toki, Gifu
+        - Toshiba Corporation
+        - Niigata University , Niigata
+        - Osaka Electro-Communication University , Neyagawa, Osaka
+        - Osaka University , Osaka
+        - Shizuoka University , Shizuoka
+        - Tokyo University of Science, Noda, Chiba
+        - Saitama University, Urawa, Saitama
+        - National Institute for Quantum & Radiol.Sci.& Tech., Takasaki
+        - Tokyo Institute of Technology, Tokyo
+        - Tokushima University , Tokushima
+        - Tokyo Metropolitan University , Hachioji, Tokyo
+        - Tohoku University , Sendai
+        - Tohoku Institute of Technology, Sendai
+        - University of Tokyo, Tokyo
+        - University of Tsukuba, Tsukuba
+        - Waseda University , Tokyo
+        - Wakasa Wan Energy Research Center, Tsuruga, Fukui
+        - Yamanashi University , Kofu
+        - Yamagata University , Yamagata
+        - Rikkyo (St.Paul) University , Yokosuka and Tokyo
+        - Luxembourg
+        - Monaco
+        - University of Amsterdam, Amsterdam
+        - Technical University , Delft
+        - Eindhoven University of Technology
+        - Vrije Universiteit te Amsterdam, De Boelelaan
+        - Nat'l Institute for Nuclear and High Energy Physics, Sect.K
+        - Kernfysich Versneller Institute , Groningen
+        - University of Leiden
+        - Netherlands
+        - Nuclear Research and Consultancy Group, Petten
+        - Netherland's Energy Research Foundation, Petten
+        - Rijksuniversiteit Groningen, Groningen
+        - University of Utrecht
+        - Central Bureau der V.D.E.N., Arnhem
+        - University of Bergen
+        - Halden, Institute for Energiteknikk
+        - Institutt for Energiteknikk (IFE), Kjeller
+        - Norway
+        - University of Oslo, Oslo
+        - Universidade de Coimbra, Coimbra
+        - Universidade de Lisboa, Lisboa
+        - Universidade Nova de Lisboa, Lisboa
+        - Portugal
+        - Abo Akademi, Turku
+        - University of Helsinki, Helsinki
+        - Helsinki Tech.University , Otaniemi
+        - University of Jyvaskyla, Jyvaskyla
+        - University of Oulu, Oulu
+        - Finland
+        - Turku University
+        - Universidad Autonoma de Madrid, Madrid
+        - Universidad de Granada, Granada
+        - Universidad de Huelva, Huelva
+        - Instituto de Estructura de la Materia, Madrid
+        - Centro para Invest. Energ., Medio. y Tecnol. (CIEMAT)
+        - Universidad de Santiago de Compostela
+        - Universidad de Sevilla, Seville
+        - Spain
+        - Universitat Politecnica de Catalunya, Barcelona
+        - Universidad Politecnica de Madrid, Madrid
+        - Universidad de Valencia, Valencia
+        - Universidad de Vigo, Vigo
+        - Universidad de Valladolid
+        - Studsvik Energiteknik AB
+        - Chalmers University of Tech., Gothenburg
+        - Swedish Defence Research Agency (FOI), Stockholm
+        - Research Institute of Physics (form.Nobel Institute ), Stockholm
+        - Royal Institute of Tech., Stockholm
+        - Lund University + Tech.University 
+        - Sweden
+        - Studsvik Science Research Laboratory, Nykoeping
+        - Uppsala University , Uppsala
+        - Stockholm University
+        - University of Basel, Basel
+        - Eidgenossische Technische Hochschule, Zuerich
+        - University of Fribourg
+        - University of Geneva
+        - University of Lausanne
+        - University of Neuchatel
+        - Paul Scherrer Institute , Villigen
+        - Switzerland
+        - Universitaet Bern, Bern
+        - Zurich
+        - Ankara University + Middle East Technical University , Ankara
+        - Ankara Nuclear Research and Training Centre
+        - Cekmece Nuclear Research Centre, Istanbul
+        - Gazi University, Ankara
+        - Kocaeli University, Kocaeli
+        - Istanbul University
+        - Turkey
+        - Yildiz Technical University, Istanbul
+        - Atomic Weapons Establishment (AWE), Aldermaston
+        - University of Aston, Birmingham
+        - University of Birmingham, England
+        - University of Belfast, N.Ireland
+        - University of Bradford, England
+        - University of Bristol, England
+        - Cavendish Laboratory , Cambridge, Engl.
+        - Berkeley Nuclear Laboratories (BNL), Berkeley
+        - Royal Military Coll.of Sci.,Cranfield University ,Swindon
+        - UKAEA Fusion, Culham Science Centre, Abingdon
+        - Daresbury Laboratory, Warrington
+        - Dounreay Experimental Reactor Establishment, Thurso
+        - University of Durham, England
+        - University of Edinburgh, Scotland
+        - University of Glasgow, Glasgow, Scotland
+        - University of Hertfordshire, Hatfield, Hertfordshire
+        - M.R.C.Cyclotron Unit, Hammersmith Hospital, London
+        - Imp.Coll.of Sci.+Techn., London
+        - King's College London, London
+        - University of Kent, Canterbury, England
+        - Keele University , Keele, Staffordshire, England
+        - University of Leeds, Leeds, England
+        - University of London, London, England
+        - University of Liverpool, England
+        - University of Manchester, England
+        - Metropolitan-Vickers Electrical H.V. Laboratory 
+        - University of Newcastle-on-Tyne
+        - Rutherford Appleton Laboratory, Chilton, England
+        - National Physics Laboratory , Teddington
+        - National Radiological Protection Board, Harwell
+        - University of Oxford, Oxford
+        - Queen Mary College, London
+        - University of Reading
+        - Rolls-Royce
+        - Polytechnic of South Bank, London
+        - University of Sheffield
+        - Scottish Reactor Centre, E.Kilbride, Scotland
+        - University of Sussex, Brighton
+        - University of Surrey, Guildford
+        - United Kingdom
+        - Windscale Reactor Development Labs., UKAEA
+        - University of York, York
+        - Bureau International des Poids et Mesures, Sevres
+        - European Org. for Nuclear Research (CERN), Geneva
+        - EURATOM, Bruxelles
+        - European Commission
+        - The European Synchrotron Radiation Facility, Grenoble
+        - EC Joint Research Centre (EC-JRC), Geel
+        - EC Joint Research Center (EC-JRC), Ispra
+        - EC Joint Research Centre (EC-JRC), Karlsruhe
+        - NEA Data Bank, Paris
+        - OECD Nuclear Energy Agency (NEA)
+        - Afghanistan
+        - Algeria
+        - Centre de Recherche Nucleaire d'Alger (CRNA), Algiers
+        - Centre de Recherche Nucleaire de Birine (CRNB),Birine
+        - Universite d'Alger, Algiers
+        - Universite Sci. et Tech. Houari Boumediene, Algiers
+        - Angola
+        - Argentina
+        - Institute Balseiro y Centro Atomico Bariloche, Bariloche
+        - Centro de Documentacion Cientifica, Buenos Aires
+        - Consejo Nac. de Invest. Cientificas y Tec. (CONICET)
+        - Comision Nacional de Energia Atomica, Buenos Aires
+        - Center Nacional de Rad. Cosmica, Buenos Aires
+        - Institute de Investig.Aeronaut.y Espacial, Buenos Aires
+        - Universidad de Buenos Aires
+        - Universidad de La Plata, Buenos Aires
+        - A.I.N.S.E., Lucas Heights, NSW
+        - University of Melbourne, Parkville, Victoria
+        - Australian Radiat.Protect.&Nuclear Safe.Agency,Melbourne
+        - University of Sydney, Sydney
+        - Australian Nuclear Sci.and Techn.Org., Lucas Heights,NSW
+        - Flinders University , Bedford Park, Adelaide
+        - Australia
+        - Australian National University, Canberra
+        - Monash University
+        - University of New South Wales
+        - University Coll., Townsville, Queensl.
+        - University of Queensland
+        - University of Tasmania
+        - University of New England
+        - University of Western Australia, Nedlands
+        - Western Australian Institute of Tech., West Bentley
+        - Wollongong University College, Wollongong
+        - Bangladesh
+        - University of Dhaka, Dhaka
+        - University of Rajshahi
+        - Atomic Energy Centre, Ramna, Dhaka
+        - Institute Nuclear Science & Technology, AERE, Savar, Dhaka
+        - Bolivia
+        - Institute Boliviano de Ciencia y Tecnologia Nuclear , La Paz
+        - Laboratorio de Fisica Cosmica, Chacaltaya
+        - Sofia, Institute of Nuclear Research and Nuclear Energy
+        - Bulgaria
+        - Plovdivski Univercitet "Paisii Hiledarski", Plovdiv
+        - University of Sofia
+        - Myanmar (formerly Burma)
+        - Rangoon Arts and Science University , Rangoon
+        - Botswana
+        - Academia Brasileira de Ciencias, Rio de Janeiro
+        - Brazil
+        - Instituto de Estudos Avancados, Sao Jose dos Campos
+        - Institute de Fisica,University do Rio Grande do Sul,Porto Alegre
+        - Instit. de Engenharia Nuclear, Rio de Janeiro
+        - Institute de Pesquisas Energeticas e Nucleares, Sao Paulo
+        - Instit. de Pesquisas Radioativas, Belo Horizonte
+        - Institute Tecnologico de Aeronautica, Sao Jose dos Campos
+        - Laboratory de Dosimetria, Rio de Janeiro
+        - Pontif. Universidad Catolica, Rio de Janeiro
+        - Centro Regional de Ciencias Nucleares, Recife
+        - Centro Brazil.de Pesquisas Fisicas, Rio de Janeiro
+        - University Estadual de Campinas, Institute de Fisica, Campinas
+        - University Federal Fluminense, Niteroi
+        - University Federal de Pernambuco, Recife
+        - University Federal do Rio de Janeiro
+        - University de Sao Paulo, Sao Paulo
+        - China, Taiwan
+        - National Taiwan University , Taipei
+        - Institute of Nuclear Energy Research, Lung-Tan
+        - National Tsing Hua University , Hsin-Chu
+        - Comision de Energia Nuclear, Santiago
+        - Chile
+        - Universidad de Chile, Santiago
+        - Columbia, Rep.
+        - Institute de Asuntos Nuclear , Bogota
+        - Cameroon
+        - Costa Rica
+        - China Institute of Atomic Energy, Beijing
+        - Beihang University , Beijing
+        - Peking University , Beijing
+        - Beijing Normal University , Beijing
+        - China Nuclear Inf.Centre, Beijing
+        - China, People's Rep.
+        - Fudan University , Shanghai
+        - University of Science and Technology of China, Hefei
+        - Hexi University , Zhangye
+        - Institute of High Energy Physics, Academy Sinica, Beijing
+        - Institute of Modern Physics, Academy Sinica, Lanzhou
+        - Institute of Applied Physics and Computational Math., Beijing
+        - Jilin University , Changchun
+        - Lanzhou University , Lanzhou
+        - Nanjing University , Nanjing
+        - Northwest Institute of Nuclear Technology, Xian
+        - Southwest Institute Nuclear Physics and Chem.,Mianyang,Sichuan
+        - Shanghai Institute of Applied Physics, Chinese Academy Sci.
+        - Pingdingshan University , Pingdingshan
+        - Shaanxi Normal University , Xian
+        - Sichuan University , Chengdu
+        - Shanxi Normal University, Linfen
+        - Shanghai University of Science and Technology
+        - Sun Yat-Sen University, Zhuhai
+        - Shenzhen University, Shenzhen
+        - Tsinghua University , Beijing
+        - University of Chinese Academy of Sciences, Beijing
+        - University of Petroleum, Dongying, Shandong
+        - Zheng-Zhou University 
+        - Croatia
+        - Institute Rudjer Boskovic, Zagreb
+        - University of Zagreb, Zagreb
+        - Cuba
+        - Higher Institute Tech. and Applied Sci.(InSTEC), Habana
+        - Center for Development Nuclear Ene.&Appl.Tech.(CEADEN),Playa
+        - Institute of High Energy Physics, Prague
+        - Charles University , Prague
+        - Czech Technical University , Prague
+        - Czech Academy of Sciences, Prague
+        - Czech Republic
+        - Nuclear Physics Institute of Czech Academy Sci., Rez
+        - Research Centre Rez, Husinec-Rez
+        - Ecuador
+        - Ain Shams University , Cairo
+        - Atomic Energy Authority (AEA), Cairo
+        - Egypt
+        - Tanta University , Tanta
+        - Ethiopia
+        - Ghana
+        - National Nuclear Research Institute, Legon
+        - Guatemala
+        - Hong Kong
+        - Chinese University of Hong Kong
+        - The University of Hong Kong
+        - Institute for Nuclear Research (ATOMKI), Debrecen
+        - Eotvos Lorand University , Budapest
+        - Hungary
+        - Centre for Energy Research (EK), Budapest
+        - University of Debrecen, Debrecen
+        - National Bureau of Measurements, Budapest
+        - Budapest University of Technology and Economics, Budapest
+        - Wigner Research Centre for Physics, Budapest
+        - Allahabad University , Allahabad
+        - Andhra University , Visakhapatnam
+        - M.S. University of Baroda, Baroda
+        - Bangalore University, Bengaluru
+        - Banaras Hindu University , Varanasi
+        - Bose Institute, Kolkata
+        - Kolkata, University
+        - National Centre for Composit. Charact. of Mat., Hyderabad
+        - University of Calicut, Calicut
+        - Delhi University , Delhi
+        - Central Fuel Research Institute , FRI, Bihar
+        - Gauhati University , Jalukbari, Guwahati
+        - Gulmarg Research Observat., Kashmir
+        - Ind.Ass.Cult.of Sc., Kolkata
+        - Indian Institute of Technology, Mumbai
+        - Indian Institute of Technology, Delhi
+        - Indian Institute of Technology, Kharagpur
+        - Indian Institute of Technology, Ropar
+        - India
+        - Institute of Physics, Bhubaneswar
+        - Indian Institute of Technology, Roorkee
+        - Indian Statistical Institute, Kolkata
+        - Indian Institute of Technology, Kanpur
+        - Jawaharlal Nehru University , New Delhi
+        - Indira Gandhi Centre for Atomic Research, Kalpakkam
+        - Karnatak University, Dharwad
+        - Kurukshetra University , Kurukshetra
+        - Lucknow University , Lucknow
+        - Indian Institute of Technology, Madras
+        - Mahatma Ghandi Science Institute of Technology, Ahmedabad
+        - Mangalore University, Mangalagangotri, Konaje
+        - Manipal University, Manipal
+        - Aligarh Muslim University , Aligarh
+        - North Eastern Hill University, Meghalaya
+        - Inter-University Accelerator Centre, New Delhi
+        - Osmania University, Hyderabad
+        - Punjabi University , Patiala
+        - University of Pune
+        - Physics Research Laboratory, Ahmedabad
+        - Punjab University , Chandigarh
+        - Saha Institute of Nuclear Physics, Kolkata
+        - Saurashtra University , Rajkot
+        - Shivaji University , Kolhapur
+        - Tata Institute of Fundamental Research, Mumbai
+        - Bhabha Atomic Research Centre (BARC), Trombay, Mumbai
+        - University of Rajasthan, Jaipur
+        - University of Roorkee, Roorkee
+        - Variable Energy Cyclotron Centre, Kolkata
+        - Vikram University , Ujjain
+        - Bandung Reactor Center, Bandung
+        - Indonesia
+        - Sharif University of Technology, Tehran
+        - Iran
+        - Agricult., Med. & Indust. Research School (AMIRS), Karaj
+        - Nuclear Sci. and Technol. Research Institute , AEOI, Tehran
+        - Pahlavi University , Daneshgah, Shiraz
+        - University of Tehran, Tehran
+        - University Baghdad
+        - Iraq
+        - Nuclear Research Center, Baghdad
+        - Hebrew University , Jerusalem
+        - Technion Haifa
+        - Israel
+        - Ben Gurion University of the Negev, Beer-Sheva
+        - Rehovoth Laboratory , Israel AEC.
+        - Soreq Research Centre, Yavne
+        - Tel Aviv University
+        - Weizmann Institute , Rehovoth
+        - Ivory Coast
+        - Jamaica
+        - West-Indies University , Kingston
+        - Jordan
+        - Democratic People's Rep. of Korea
+        - Institute of Radiochemistry, Pyongyang
+        - Chung-Ang University, Seoul
+        - Donga University, Busan
+        - Dongnam Institute of Radiological & Medical Sci., Busan
+        - Institute for Basic Science, Daejeon
+        - Korea Atomic Energy Research Instit. (KAERI), Daejeon
+        - Korea Institute Geoscience & Mineral Resources (KIGAM),Daejeon
+        - Kyungpook National University, Daegu
+        - Republic of Korea
+        - Korea Institute Radiological & Medical Sci.(KIRAMS), Seoul
+        - Korea Research Institute of Standards & Science, Daejeon
+        - Korea University, Seoul
+        - Seoul National University, Seoul
+        - Pusan National University, Busan
+        - Pohang University of Science and Technology, Pohang
+        - Sungkyunkwan University, Suwon
+        - University of Ulsan, Ulsan
+        - Yonsei University, Seoul
+        - Kuwait
+        - Kenya
+        - University College, Nairobi
+        - Lebanon
+        - Libya
+        - Tajura Nuclear Research Center, Tripoli
+        - University of Garyounis, Benghazi
+        - Madagascar
+        - Macedonia
+        - Malaysia
+        - University Kebangsaan Malaysia, Bangi
+        - University Sains Malaysia, Penang
+        - Instituto Nacional de Investigaciones Nucleares
+        - Instituto Politecnico Nacional, Mexico City
+        - Tecnologico de Monterrey
+        - Mexico
+        - Universidad de Guanajuato
+        - University Nacional Autonoma de Mexico (UNAM), Mexico City
+        - Mongolia
+        - National University of Mongolia, Ulaanbaatar
+        - Mali
+        - University Mohammed V, Rabat
+        - Morocco
+        - Niger
+        - Ahmadu Bello University, Zaria
+        - Nigeria
+        - University of Auckland, Auckland
+        - Institute of Nuclear Sciences, Lower Hutt
+        - New Zealand
+        - Victoria University of Wellington, Wellington
+        - Oman
+        - Nuclear Research Laboratory ,Gov't College, Lahore
+        - Atomic Energy Centre, Lahore
+        - PINSTECH, Nilore, Rawalpindi
+        - Pakistan
+        - Quaid-i-Azam University, Islamabad
+        - Instituto Superior de Energia Nuclear, Lima
+        - Peru
+        - Philippines
+        - Niewodniczanski Institute of Nuclear Physics, Krakow
+        - Narodowe Centrum Badan Jadrowych, Swierk+Warszawa
+        - AGH University of Science and Technology
+        - Wyzsza Szkola Pedagogiczna, Kielce
+        - Wyzsza Szkola Pedagogiczna, Katowice
+        - University of Lodz, Lodz
+        - Poland
+        - Politechnika Warszawska
+        - Curie-Sklodowska University, Lublin
+        - University of Silesia, Katowice
+        - Jagiellonian University, Krakow
+        - University of Wroclaw, Wroclaw
+        - University of Warsaw, Warsaw
+        - Paraguay
+        - Qatar
+        - Babes-Bolyai University, Cluj
+        - Horia Hulubei National Institute (IFIN-HH), Magurele
+        - University of Bucharest
+        - Central Institute of Physics, Bucharest
+        - Research Centre of Physics , Jassy
+        - Pedagogical Institute , Constantza
+        - Institute of Nuclear Power Reactors (I.R.N.E.)
+        - Romania
+        - University of Durban-Westville, Durban
+        - iThemba Laboratories, Somerset West
+        - Atomic Energy Corp.of South Africa, Pelindaba
+        - University of Potchefstrom, Potchefstrom
+        - South Africa, Rep.
+        - University of Capetown, Cape Town
+        - Council for Scientific and Industrial Research , Pretoria
+        - Stellenbosch University , Matieland
+        - University of Pretoria, Hatfield, Pretoria
+        - University of South Africa, Pretoria
+        - University of the Western Cape, Bellville
+        - University of the Witwatersrand, Johannesburg
+        - King Fhad University of Petroleum and Minerals, Dhahran
+        - King Faisal Specialist Hospital & Research Centre, Riyadh
+        - King Saud University, Riyadh
+        - Saudi Arabia
+        - Institute of Nuclear Physics, Tirana
+        - Albania
+        - Sierra Leone
+        - Singapore
+        - Slovakia
+        - Slovak Academy of Sciences, Physics Institute , Bratislava
+        - Komenskeho (Comenius) University , Bratislava
+        - Institute Jozef Stefan, Ljubljana
+        - Slovenia
+        - Senegal
+        - Sri Lanka
+        - Institut za Nuklearne Nauke "Vinca", Beograd
+        - Serbia
+        - University of Khartoum
+        - Sudan
+        - Nuclear Engineering Department , AEC, Damascus
+        - Syria
+        - Office of the Atomic Energy for Peace, Bangkok
+        - Chiang Mai University 
+        - Thailand
+        - Tunisia
+        - United Arab Emirates
+        - Uganda
+        - Montevideo, Universidad de la Republica
+        - Uruguay
+        - Institute Venezual. de Investigacion Cientifica, Caracas
+        - University Central de Venezuela, Caracas
+        - Universidad Simon Bolivar, Caracas
+        - Venezuela
+        - Nuclear Research Institute , Dalat
+        - Institute of Physics , Vietnam Academy Sci.and Technol., Hanoi
+        - Vietnam Atomic Energy Institute (VINATOM), Hanoi
+        - Institute for Nuclear Science and Technology, Hanoi
+        - Vietnam
+        - Zaire
+        - Zambia
+        - Zimbabwe
+        - International Atomic Energy Agency (IAEA), Vienna
+        - International Laboratory of Marine Radioactivity
+        - Intern.Centre for Theoretical Physics, Trieste
+        - U.N. Organizations
+        - Armenia
+        - A.I. Alikhanyan National Sci. Laboratory (YerPhI), Yerevan
+        - Yerevan State University , Yerevan
+        - Azerbaydzhan
+        - Belarus
+        - Institute Fiz. Belorus. AN, Minsk
+        - Joint Institute f.Energy and Nuclear Research , Minsk-Sosny
+        - Institute Rad.Physics Chem.Probl., Belarus Academy Sci., Minsk
+        - Institute Teplo-Massoobmena Byeloruss. A.N., Minsk
+        - Estonia
+        - Georgia
+        - Institute Fiziki Gruzinskoi Akad.Nauk, Tbilisi
+        - Tbilisskiy Gosudarstvennyi University , Tbilisi
+        - Almaty Technological Institute, Almaty
+        - Al-Farabi Kazakh National University, Almaty
+        - L.N.Gumilyov Eurasian National University, Nur-Sultan
+        - Kazakhstan
+        - Institute Yadernoi Fiziki, Almaty
+        - Nazarbayev University , Nur-Sultan
+        - Latvia
+        - University of Latvia, Riga
+        - Lithuania
+        - Vilnius University, Vilnius
+        - Institute of Applied Physics, Chisinau
+        - Moldova
+        - Biophysical Institute , Moscow
+        - Centr po Yadernym Dannym, Obninsk
+        - Dubna State University, Dubna
+        - Experimental Physics Institute , Sarov
+        - Fiziko-Energeticheskii Institute , Obninsk
+        - Fiziko-Tekh. i Radio-Tekh. Izmerenii, Mendeleevo
+        - Fiz.-Tekhnicheskiy Institute Ioffe, St.Petersburg+Gatchina
+        - Institute for High Energy Physics, Protvino
+        - Institute for Geo- and Analytical Chemistry, Moscow
+        - State Committee on Standards, Moscow
+        - University of Gorkiy, Gorkiy
+        - Institute of Chemical Physics , Moscow
+        - Space Research Institute , Moscow
+        - Institute Fizicheskikh Problem, Moskva
+        - Institute of Information of Russ.State A.E.Comm., Moscow
+        - Institute Teoret. + Experiment. Fiziki, Moskva
+        - Institute of Innovation and Thermonuclear Research , Troitsk
+        - Institute Yadernych Issledovaniy Rossiiskoi A.N., Moskva
+        - Institute of Crystallography, St.Petersburg
+        - Khabarovsk State Technical University , Khabarovsk
+        - National Issl.Tsentr "Kurchatovskii Institut", Moskva
+        - Fiz.Institute Lebedev (FIAN), Moskva
+        - Peterburgskiy Institute Yad.Fiz.,Russ.Ak.Nauk., Gatchina
+        - Leningradskiy Politekhnicheskiy Institute 
+        - Institute Mediko-Biologicheskikh Problem, Moskva
+        - Moskovskiy Fiziko-Tekhnicheskiy Institute , Moskva
+        - National Research Nuclear University MEPhI, Moscow
+        - Vsesoyuznyi Nauchno-Issl.Institute Metrol., St.Petersburg
+        - Moscow State University , Moscow
+        - Moscow Scient.and Research Project Institute in Energy and Techn.
+        - NIIAR Dimitrovgrad
+        - Institute Optiko-Fizicheskikh Izmerenii, Moskva
+        - Institute of Atomic Energetics, Obninsk
+        - Omsk Institute of Railroad Engineers
+        - Rostovskiy Gosudarstvennyi University , Rostov-na-Donu
+        - Khlopin Radievij Institute , St.Petersburg
+        - Russia
+        - Saratov Gosudarstvennyi University 
+        - Institute Yad. Fiz., Sib. A.N., Novosibirsk
+        - Gosudarstvennyi University (State University ), St.Petersburg
+        - Leningradskiy Tekhnologicheskiy Institute Im.Lensoveta
+        - Technical Physics Institute , Chelyabinsk
+        - Tomskii Politekhnicheskii Universitet, Tomsk
+        - Tver' State University , Tver'
+        - Scient.and Technical Inform.Institute , Moscow
+        - Institute of Electron Physics, Ukrain.Academy Sci., Uzhgorod
+        - Institute Fiziki Ukrainskoi A.N., Kiev
+        - Institute Yadernyh Doslidzhen, N.A.N.Ukraini, Kyiv
+        - Institute Radiofiziki i Elekroniki, Ukrain. AN, Kharkov
+        - Bogolyubov Institute of Theor.Physics ,Ukrain.Academy Sci., Kiev
+        - Kharkovskii Fiziko-Tekhnicheskii Institute , Kharkov
+        - Kyivsky Natsionalny University "Taras Shevchenko", Kyiv
+        - Kharkivsky Natsionalny University "V.N. Karazin", Kharkiv
+        - Ukraine
+        - Uzhgorod State University 
+        - National University of Uzbekistan, Tashkent
+        - Samarkand State University , Samarkand
+        - Uzbekistan
+        - Institute Yadernoi Fiziki Uzbekskoi A.N., Tashkent
+        - Joint Institute for Nuclear Research (JINR), Dubna
         - Other (please update later on)
     validations:
       required: false  
