@@ -168,27 +168,13 @@ body:
       label: Error Analysis
       description: The type of error analysis included
       options:
-{{ DETECTORS }}
+{{ DATA_HEADINGS }}
         - other (please update later on)
     validations:
       required: false
-  - type: textarea
-    id: history
-    attributes:
-      label: History
-      description: Comments on the history of this entry
-      placeholder: 
-    validations:
-      required: false
+
 # Note: `Status` is intentionally not included here as this should be handled by the workflow procedure later on
 
-# To be added in Bib
-# - ~~INC-Source~~
-# - ~method~~
-# - ~~Detector~~
-# - monitor
-# - status
-# - history (?)
 # 
 # To be added in entry
 # - reaction

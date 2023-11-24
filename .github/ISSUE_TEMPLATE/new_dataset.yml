@@ -1701,80 +1701,430 @@ body:
       label: Error Analysis
       description: The type of error analysis included
       options:
-        - Scintillator BaF2
-        - Bismuth-Germanate crystal detector
-        - Bubble chamber
-        - Cerenkov detector
-        - Coincidence counter arrangement
-        - Compton Polarimeter
-        - Cesium-Iodide crystal
-        - 4pi detector
-        - Drift chamber
-        - Fission chamber
-        - Geiger-Mueller counter
-        - Glass detector
-        - Passivated implanted planar Si detector
-        - Ionization chamber
-        - Magnetic spectrometer
-        - Microchannel plate
-        - Moderating tank detector
-        - Multi-wire drift chamber
-        - Multi-wire proportional counter
-        - Multi-wire spark counter
-        - Sodium-Iodide crystal
-        - Parallel-grid avalanche detector
-        - Photovoltaic Cell
-        - Nuclear plates
-        - Parallel plate avalanche counter
-        - Proportional counter
-        - Position sensitive detector
-        - Scintillation detector
-        - Silicon detector
-        - Silicon surface barrier detector
-        - Silicon-Lithium detector
-        - Silicon strip detector
-        - Solid-state detector
-        - Large spectrometer system
-        - Scintillator tank
-        - Single-wire proportional counter
-        - Counter telescope
-        - Thin-film Breakdown Counter
-        - Threshold detector
-        - Time projection chamber
-        - Track detector
-        - Electron-pair spectrometer
-        - Germanium detector
-        - Germanium intrinsic detector
-        - Germanium-Lithium detector
-        - Hyperpure Germanium detector
-        - LaBr3 scintillator
-        - Low energy Germanium Detector
-        - Moxon-Rae detector
-        - Extended range Germanium gamma detector
-        - Boron Trifluoride neutron detector
-        - He-3 spectrometer
-        - Hornyak button detector
-        - Long counter
+        - Energy of outgoing particle used for normalization
+        - Energy of first outgoing particle used for normalizati
+        - Energy of second outgoing particle used for normalizat
+        - Inc.projectile energy (in Center of mass ) used for normalization
+        - Incident projectile energy used for normalization
+        - Upper limit of incident energy range for normalization
+        - Lower limit of incident energy range for normalization
+        - Energy resolution of normalization incident energy
+        - 1st incident projectile energy for normalization, see MONITOR
+        - Lower limit of 1st incident energy range for normalizatio
+        - Upper limit of 1st incident energy range for normalizatio
+        - 2nd incident projectile energy for normalization, see MONITOR
+        - 3rd incident projectile energy for normalization, see MONITOR
+        - Resonance energy for normalization
+        - Half-life of nuclide to which data is normalized
+        - Dummy spectrum temperature of reference
+        - Temperature of reference Maxwellian spectrum
+        - Normalization value for reaction given under MONITOR
+        - Normalization value, Center of mass system, see MONITOR
+        - Normalization value for denominator of REACTION ratio
+        - Upper limit of normalization value
+        - Lower limit of normalization value
+        - Normalization value for numerator of ratio
+        - 1st normalization value, see MONITOR
+        - Error in 1st normalization value
+        - 2nd normalization value, see MONITOR
+        - Error in 2nd normalization value
+        - 3rd normalization value, see MONITOR
+        - Error in 3rd normalization value
+        - 4th normalization value, see MONITOR
+        - Error in 4th normalization value
+        - 5th normalization value, see MONITOR
+        - Error in 5th normalization value
+        - 6th normalization value, see MONITOR
+        - Error in 6th normalization value
+        - 7th normalization value, see MONITOR
+        - 8th normalization value, see MONITOR
+        - Error in normalization value
+        - Assumed value, defined under ASSUMED.
+        - Error in assumed value
+        - Upper limit of assumed value
+        - Lower limit of assumed value
+        - 1st assumed value, defined under ASSUMED.
+        - 1st assumed value error
+        - Upper limit of 1st assumed value
+        - Lower limit of 1st assumed value
+        - 2nd Assumed value, defined under ASSUMED.
+        - 2nd Assumed value error
+        - Upper limit of 2nd assumed value
+        - Lower limit of 2nd assumed value
+        - 3rd assumed value, defined under ASSUMED.
+        - 3th assumed value error
+        - 4th assumed value, defined under ASSUMED.
+        - 4th assumed value error
+        - 5th assumed value, defined under ASSUMED.
+        - 5th assumed value error
+        - Value of quantity specified under REACTION
+        - Approx.value of quant.specif.under REACTION, Center of mass system 
+        - Approximate value of quantity specif. under REACTION
+        - Value of quantity specif. under REACTION, Center of mass system 
+        - Upper limit of quantity specified under REACTION
+        - Lower limit of quantity specified under REACTION
+        - Lower lim.of quant.specif.under REACTION, Center of mass system 
+        - Upper lim.of quant.specif.under REACTION, Center of mass system 
+        - Error in value of quantity, defined under ERR-ANALYS
+        - 1st data uncertainty, defined under ERR-ANALYS
+        - 2nd data uncertainty, defined under ERR-ANALYS
+        - 3rd data uncertainty, defined under ERR-ANALYS
+        - 4th data uncertainty, defined under ERR-ANALYS
+        - 5th data uncertainty, defined under ERR-ANALYS
+        - 6th data uncertainty, defined under ERR-ANALYS
+        - 1st partial uncertainty, defined under ERR-ANALYS
+        - 10th partial uncertainty, defined under ERR-ANALYS
+        - 11th partial uncertainty, defined under ERR-ANALYS
+        - 12th partial uncertainty, defined under ERR-ANALYS
+        - 13th partial uncertainty, defined under ERR-ANALYS
+        - 14th partial uncertainty, defined under ERR-ANALYS
+        - 15th partial uncertainty, defined under ERR-ANALYS
+        - 16th partial uncertainty, defined under ERR-ANALYS
+        - 17th partial uncertainty, defined under ERR-ANALYS
+        - 18th partial uncertainty, defined under ERR-ANALYS
+        - 2nd partial uncertainty, defined under ERR-ANALYS
+        - 3rd partial uncertainty, defined under ERR-ANALYS
+        - 4th partial uncertainty, defined under ERR-ANALYS
+        - 5th partial uncertainty, defined under ERR-ANALYS
+        - 6th partial uncertainty, defined under ERR-ANALYS
+        - 7th partial uncertainty, defined under ERR-ANALYS
+        - 8th partial uncertainty, defined under ERR-ANALYS
+        - 9th partial uncertainty, defined under ERR-ANALYS
+        - Digitizing error (of DATA)
+        - Statistical uncertainty (1-Sigma)
+        - Total systematic uncertainty
+        - Total uncertainty (1-Sigma)
+        - Angular momentum (L) of resonance
+        - Parity of resonance
+        - Spin (J)
+        - Statistical-weight Factor (g)
+        - Exc. energy of initial compound nucleus on resonance
+        - Resonance energy
+        - Resonance energy, Center of mass system
+        - Resonance energy, REACTION ratio denominator
+        - Upper limit of resonance energy
+        - Lower limit of resonance energy
+        - Resonance energy, REACTION ratio numerator
+        - Mu
+        - Error in exc. energy of initial comp.nucl.on resonance
+        - Error in resonance energy
+        - Lower limit of exc. energy of initial compound nucleus
+        - Upper limit of exc. energy of initial compound nucleus
+        - Excitation energy of initial compound nucleus
+        - Energy of incident projectile, laboratory system
+        - Approximate value of incident projectile energy
+        - Sum of projectile and target energies in Center of mass s.
+        - Upper limit of Center of mass incident projectile energy range
+        - Lower limit of Center of mass incident projectile energy range
+        - Incident energy for REACTION ratio denominator
+        - Upper limit of incident projectile energy range
+        - Upper limit of incident energy range, REACTION ratio denom.
+        - Upper limit of incident energy range, REACTION ratio numer.
+        - Lower limit of incident projectile energy range
+        - Approximate lower limit incident projectile energy
+        - Lower limit of incident energy range, REACTION ratio denom.
+        - Lower limit of incident energy range, REACTION ratio numer.
+        - Incident projectile energy, REACTION ratio numerator
+        - Error in excitation energy of initial compound nucleus
+        - Uncertainty in incident projectile energy
+        - Digitizing error of incident particle energy
+        - 1st incident projectile energy error, see ERR-ANALYS
+        - 2nd incident projectile energy error, see ERR-ANALYS
+        - 3rd incident projectile energy error, see ERR-ANALYS
+        - Incident projectile energy resolution (Unspecified)
+        - Inc.projectile energy resol.(FWHM), REACTION ratio denominat
+        - Incident projectile energy resolution (Full width)
+        - Incident projectile energy resolution (Half width)
+        - 1st incident projectile energy resolution (Half width)
+        - 2nd incident projectile energy resolution (Half width)
+        - Inc.projectile energy resol.(FWHM), REACTION ratio numerator
+        - Linear momentum of incident projectile
+        - Maximum linear momentum of incident projectile
+        - Minimum linear momentum of incident projectile
+        - Error of linear momentum of incident projectile
+        - Incident projectile linear momentum resolution
+        - Dummy incident energy, REACTION ratio denominator
+        - Dummy incident energy, REACTION ratio numerator
+        - Dummy incident projectile energy, for broad spectrum
+        - Mean energy of incident projectile spectrum
+        - Inc. spectr. mean energy, REACTION ratio denominator
+        - Inc. spectr. mean energy, REACTION ratio numerator
+        - Spectrum temperature (energy units)
+        - Spectrum temperature, REACTION ratio denominator
+        - Dummy spectrum temperature, REACTION ratio denominator
+        - Dummy spectrum temperature, REACTION ratio numerator
+        - Dummy spectrum temperature
+        - Spectrum temperature (temperature units)
+        - Spectrum temperature, REACTION ratio numerator
+        - Error in dummy spectrum temperature
+        - Error in spectrum temperature (energy units)
+        - Error in spectrum temperature (temperature units)
+        - Wave length of incident particle
+        - Upper boundary of wave length of incident particle
+        - Lower boundary of wave length of incident particle
+        - Energy of outgoing particle, laboratory system
+        - Approx. energy of outgoing particle, laboratory system
+        - Energy of outgoing particle, Center of mass system
+        - Upper limit of outgoing particle energy range, Center of mass system 
+        - Lower limit of outgoing particle energy range, Center of mass system 
+        - Outgoing particle energy, REACTION ratio denominator
+        - Upper limit of outgoing particle energy range, laboratory system 
+        - Outgoing particle energy, REACTION ratio numerator
+        - Mean energy of outgoing particles, laboratory system
+        - Lower limit of outgoing particle energy range, laboratory system 
+        - Relative energy of outgoing particles
+        - Upper limit of relative energy of outgoing particle in lab
+        - Lower limit of relative energy of outgoing particle in lab
+        - 1st outgoing particle energy , defined under EN-SEC
+        - 1st outgoing particle energy , Center of mass defined under EN-SEC
+        - Upper limit, 1st outgoing particle energy range, see EN-SEC
+        - Lower limit, 1st outgoing particle energy range, see EN-SEC
+        - 2nd outgoing particle energy, defined under EN-SEC
+        - Upper limit, 2nd outgoing particle energy range, see EN-SEC
+        - Lower limit, 2nd outgoing particle energy range, see EN-SEC
+        - Distance along S-curve for range of E1 and E2
+        - Mean distance along S-curve for range of E1 and E2
+        - Total kinetic energy
+        - Upper boundary of total kinetic energy
+        - Lower boundary of total kinetic energy
+        - Wave length of outgoing particle
+        - Error in outgoing particle energy , REACTION ratio denom.
+        - Outgoing particle energy error
+        - Digitizing error of outgoing particle energy
+        - Error in outgoing particle energy , REACTION ratio numerat
+        - Error in relative energy of outgoing particles
+        - Outgoing particle energy resolution
+        - Outgoing particle energy resolution (full width)
+        - Outgoing particle energy resolution (half width)
+        - 1st outgoing particle energy error
+        - 2nd outgoing particle energy error
+        - Digitizing error of total kinetic energy
+        - Level energy
+        - Level energy, REACTION ratio denominator
+        - Final level of gamma transition
+        - Final level of gamma transition, def.under EN-SEC
+        - Initial level of gamma transition
+        - Initial level of gamma transition, def.under EN-SEC
+        - Upper energy limit of discrete level group
+        - Mean level energy
+        - Lower energy limit of discrete level group
+        - Level energy, REACTION ratio numerator
+        - 1st level energy, defined under EN-SEC
+        - Upper limit of 1st level energy range
+        - Lower limit of 1st level energy range
+        - 2nd level energy, defined under EN-SEC
+        - Upper limit of 2nd level energy range
+        - Lower limit of 2nd level energy range
+        - Level energy error
+        - Excitation energy
+        - Excitation energy for denominator of REACTION ratio
+        - Upper limit of excitation energy range
+        - Mean excitation energy
+        - Lower limit of excitation energy range
+        - Approximate upper limit of excitation energy range
+        - Excitation energy for numerator of REACTION ratio
+        - 1st excitation energy, defined under EN-SEC
+        - Upper limit of 1st excitation energy range
+        - Lower limit of 1st excitation energy range
+        - 2nd excitation energy, defined under EN-SEC.
+        - Upper limit of 2nd excitation energy range
+        - 3rd excitation energy, defined under EN-SEC.
+        - Excitation energy error
+        - 1st excitation energy error, defined under ERR-ANALYS
+        - 2nd excitation energy error, defined under ERR-ANALYS
+        - Q-value
+        - Approximate Q-value
+        - Upper limit of Q-value
+        - Mean Q-value
+        - Lower limit of Q-value
+        - Q-value uncertainty
+        - Q-value resolution
+        - Degradation in incident vs. outgoing particle energy
+        - Upper limit of degradation in incident vs. outgoing particle energy 
+        - Lower limit of degradation in incident vs. outgoing particle energy 
+        - Error in degradation in incident vs. outgoing particle energy 
+        - Gain in incident vs. outgoing particle energy
+        - Error in gain in incident vs. outgoing particle energy
+        - Level number of isobaric analog state
+        - Level number, REACTION ratio denominator
+        - Lower limit of level number
+        - Upper limit of level number
+        - Level number, REACTION ratio numerator
+        - Level number
+        - Upper limit of 1st outgoing particle linear momentum
+        - Lower limit of 1st outgoing particle linear momentum
+        - Upper limit of 2nd outgoing particle linear momentum
+        - Lower limit of 2nd outgoing particle linear momentum
+        - Linear momentum of outgoing particle
+        - Minimum linear momentum of outgoing particle
+        - Maximum linear momentum of outgoing particle
+        - 1st linear momentum of outgoing particle
+        - 2nd linear momentum of outgoing particle
+        - 3rd linear momentum of outgoing particle
+        - 4th linear momentum of outgoing particle
+        - 5th linear momentum of outgoing particle
+        - Error of linear momentum of outgoing particle
+        - Polarity
+        - Polarity for denominator of REACTION ratio
+        - Polarity for numerator of REACTION ratio
+        - Angle, laboratory system
+        - Azimuthal angle between 2 reaction planes
+        - Angle, Center of mass system
+        - Angle for REACTION ratio denominator, Center of mass system
+        - Upper limit of angular range, Center of mass system
+        - Lower limit of angular range, Center of mass system
+        - Angle for REACTION ratio numerator, Center of mass system
+        - Angle, REACTION ratio denominator
+        - Upper limit of angular range, laboratory system
+        - Lower limit of angular range, laboratory system
+        - Mean angle of correlated pair
+        - Angle, REACTION ratio numerator
+        - Relative angle
+        - Relative angle, Center of mass system
+        - Relative angle for REACTION ratio denominator
+        - Upper limit of relative angular range
+        - Lower limit of relative angular range
+        - Relative angle for REACTION ratio numerator
+        - 1st angle, definition given in BIB Section
+        - Angle, Center of mass system, definition given in BIB
+        - Lower limit of first angle, Center of mass system
+        - Upper limit of first angle, Center of mass system
+        - Upper limit of first angular range, laboratory system
+        - Lower limit of first angular range, laboratory system
+        - 2nd angle, definition given in BIB section
+        - Upper limit of second angular range, laboratory system
+        - Lower limit of second angular range, laboratory system
+        - 3rd Angle, definition given in BIB Section
+        - 4th Angle, definition given in BIB Section
+        - Angle error
+        - Digitizing error of angle
+        - Error of mean angle of correlated pair
+        - Angular resolution
+        - Angular resolution (FWHM)
+        - Angular resolution (HWHM)
+        - 1st angle error, definition given in BIB section
+        - 2nd angle error, definition given in BIB Section
+        - Cosine of angle, laboratory system
+        - Cosine of angle, Center of mass system
+        - Upper limit of cosine range, Center of mass system
+        - Lower limit of cosine range, Center of mass system
+        - Upper limit of cosine range, laboratory system
+        - Lower limit of cosine range, laboratory system
+        - Cosine error
+        - Digitizing error of cosine
+        - Cosine angular resolution
+        - Momentum transfer (in units MeV/c or equivalent )
+        - Momentum transfer (in units MeV/c or equivalent ), Center of mass system 
+        - Momentum transfer, q
+        - Momentum transfer, q, center of mass system
+        - Error of momentum transfer (in units MeV/c or equivalent )
+        - Wave number
+        - Fitting coefficient number
+        - Sample temperature
+        - Error in sample temperature
+        - Sample thickness
+        - Beam polarization
+        - Beam polarization error
+        - Upper limit of beam polarization
+        - Lower limit of beam polarization
+        - Target polarization
+        - Target polarization error
+        - Half-life of nuclide specified.
+        - Half-life of nuclide specified in ratio denominator
+        - Upper limit of half-life of nuclide specified.
+        - Lower limit of half-life of nuclide specified.
+        - Half-life of nuclide specified in ratio numerator
+        - Half-life of 1st nucleus specified
+        - Half-life of 2nd nucleus specified
+        - Half-life of 3rd nucleus specified
+        - Half-life of 4th nucleus specified
+        - Error in Half-life
+        - Error in Half-life of 1st nucleus specified
+        - Error in Half-life of 2nd nucleus specified
+        - Error in Half-life of 3rd nucleus specified
+        - Error in Half-life of 4th nucleus specified
+        - Group number (of delayed neutrons)
+        - Decay constant
+        - Error of energy value given under DECAY-DATA
+        - Error of half-life value given under DECAY-DATA
+        - Error of intensity value given under DECAY-DATA
+        - Error in decay constant
+        - Atomic number, REACTION ratio denominator
+        - Upper limit of atomic number range
+        - Lower limit of atomic number range
+        - Atomic number, REACTION ratio numerator
+        - Atomic number of 1st element
+        - Atomic number of 2nd element
+        - Atomic number of 3rd element
+        - Atomic number of element
+        - Atomic mass of nuclide
+        - Atomic mass of nuclide, REACTION ratio denominator
+        - Upper limit of atomic mass range
+        - Lower limit of atomic mass range
+        - Atomic mass of nuclide, REACTION ratio numerator
+        - Ratio of atomic masses of Fission Fragments
+        - Atomic mass of 1st nuclide
+        - Maximum atomic mass of 1st nuclide
+        - Atomic mass of 2nd nuclide
+        - Minimum atomic mass of 2nd nuclide
+        - Atomic mass of 3rd nuclide
+        - Digitizing error in atomic mass of nuclide
+        - Mass resolution
+        - Isomer for nuclide given
+        - Isomer for nuclide, REACTION ratio denominator
+        - Isomer for nuclide, REACTION ratio numerator
+        - 1st Isomer for nuclide
+        - 2nd Isomer for nuclide
+        - Atomic number of nuclide used for normalization
+        - Atomic mass of nuclide used for normalization
+        - Number of emitted particles
+        - Analysis energy step
+        - Decay flag. See corresponding flag in BIB section
+        - Flag, defined under FLAG.
+        - Level energy as additional information
+        - Error of level energy as additional information
+        - Final level energy as additional information
+        - Error of final level energy as additional information
+        - 1st final level energy as additional information
+        - 2nd final level energy as additional information
+        - Level Flag, Link to information under LEVEL-PROP
+        - Initial level energy as additional information
+        - Error of initial level energy as additional information
+        - 1st initial level energy as additional information
+        - 2nd initial level energy as additional information
+        - Miscellaneous Information, defined under MISC-COL.
+        - Error in miscellaneous value
+        - Digitizing error in miscellaneous value
+        - Upper limit of miscellaneous value
+        - Lower limit of miscellaneous value
+        - 1st miscellaneous field, defined under MISC-COL
+        - Error in 1st miscellaneous field
+        - 10th miscellaneous field, defined under MISC-COL
+        - 2nd miscellaneous field, defined under MISC-COL
+        - Error in 2nd miscellaneous field
+        - 3rd miscellaneous field, defined under MISC-COL
+        - Error in 3rd miscellaneous field
+        - 4th miscellaneous field, defined under MISC-COL
+        - Error in 4th miscellaneous field
+        - 5th miscellaneous field, defined under MISC-COL
+        - Error in 5th miscellaneous field
+        - 6th miscellaneous field, defined under MISC-COL
+        - Error in 6th miscellaneous field
+        - 7th miscellaneous field, defined under MISC-COL
+        - Error in 7th miscellaneous field
+        - 8th miscellaneous field, defined under MISC-COL
+        - Error in 8th miscellaneous field
+        - 9th miscellaneous field, defined under MISC-COL
+        - Irradiation time
+        - Time-of-flight
+        - Upper boundary of time-of-flight
+        - Lower boundary of time-of-flight
         - other (please update later on)
     validations:
       required: false
-  - type: textarea
-    id: history
-    attributes:
-      label: History
-      description: Comments on the history of this entry
-      placeholder: 
-    validations:
-      required: false
+
 # Note: `Status` is intentionally not included here as this should be handled by the workflow procedure later on
 
-# To be added in Bib
-# - ~~INC-Source~~
-# - ~method~~
-# - ~~Detector~~
-# - monitor
-# - status
-# - history (?)
 # 
 # To be added in entry
 # - reaction
