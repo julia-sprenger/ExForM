@@ -116,18 +116,76 @@ body:
         - Other (please update later on)
     validations:
       required: false  
-  # - type: input
-  #   id: year
-  #   attributes:
-  #     label: Year
-  #     description: The year of reference publication
-  #     placeholder: example 2019
-  #   validations:
-  #     required: false
+  - type: dropdown
+    id: facility
+    attributes:
+      label: Facility
+      description: The facility used for particle source production
+      options:
+{{ FACILITIES }}
+        - other (please update later on)
+    validations:
+      required: false
+  - type: dropdown
+    id: method
+    attributes:
+      label: Method
+      description: The method used for particle source production
+      options:
+{{ METHODS }}
+        - other (please update later on)
+    validations:
+      required: false
+  - type: dropdown
+    id: detector
+    attributes:
+      label: Detector
+      description: The detector type used
+      options:
+{{ DETECTORS }}
+        - other (please update later on)
+    validations:
+      required: false
+  - type: textarea
+    id: bib_comment
+    attributes:
+      label: Comments
+      description: Comments on the bibliography and setup
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
+    id: history
+    attributes:
+      label: History
+      description: Comments on the history of this entry
+      placeholder: 
+    validations:
+      required: false
+  - type: dropdown
+    id: error_analysis
+    attributes:
+      label: Error Analysis
+      description: The type of error analysis included
+      options:
+{{ DETECTORS }}
+        - other (please update later on)
+    validations:
+      required: false
+  - type: textarea
+    id: history
+    attributes:
+      label: History
+      description: Comments on the history of this entry
+      placeholder: 
+    validations:
+      required: false
+# Note: `Status` is intentionally not included here as this should be handled by the workflow procedure later on
 
 # To be added in Bib
-# - INC-Source
-# - Detector
+# - ~~INC-Source~~
+# - ~method~~
+# - ~~Detector~~
 # - monitor
 # - status
 # - history (?)
