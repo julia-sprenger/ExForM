@@ -1,0 +1,76 @@
+name: Discrete Level Cross Section Dataset
+description: Submit or update a dataset for discrete-level reaction cross sections
+title: "[Discrete XS] <projectile> + <target> → <outgoing(level)>"
+labels: ["nuclear-data", "cross-sections", "discrete-level"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Discrete Level Cross Sections
+        Provide all required information to define one dataset.
+
+  - type: input
+    id: projectile
+    attributes:
+      label: Projectile
+      description: Incident particle (e.g., n, p, d, α)
+      placeholder: "n"
+    validations:
+      required: true
+
+  - type: input
+    id: target
+    attributes:
+      label: Target Nucleus
+      description: Nuclide in standard notation
+      placeholder: "56Fe"
+    validations:
+      required: true
+
+  - type: input
+    id: outgoing
+    attributes:
+      label: Outgoing Particle and Level
+      description: Specify particle and discrete level (e.g., (n,p0), (n,a1))
+      placeholder: "(n,p0)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: incident_energies
+    attributes:
+      label: Incident Energies
+      description: |
+        List one or more incident energies **with uncertainties**.
+        Example:
+        ```
+        14.1 MeV ± 0.1 MeV
+        17.5 MeV ± 0.2 MeV
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: cross_sections
+    attributes:
+      label: Cross Sections
+      description: |
+        Provide cross section values **with uncertainties**, aligned with the incident energies.
+        Example:
+        ```
+        120 mb ± 6 mb
+        95 mb ± 4 mb
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Additional Metadata
+      description: |
+        Include detector setup, facility, angle information, reference/DOI, normalization method, corrections, or any other relevant details.
+      placeholder: "Facility, geometry, angle coverage, reference, analysis method..."
+    validations:
+      required: false
