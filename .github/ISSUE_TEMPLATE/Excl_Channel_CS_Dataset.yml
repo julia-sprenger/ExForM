@@ -1,0 +1,85 @@
+name: Exclusive Channel Cross Section Dataset
+description: Submit or update a dataset for exclusive channel cross sections
+title: "[Exclusive XS] <projectile> + <target> → <reaction>"
+labels: ["nuclear-data", "cross-sections", "exclusive-channel"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Exclusive Channel Cross Sections  
+        Please provide all information required to define one dataset.
+
+  - type: input
+    id: projectile
+    attributes:
+      label: Projectile
+      description: Specify the incident particle (e.g., n, p, d, α)
+      placeholder: "n"
+    validations:
+      required: true
+
+  - type: input
+    id: target
+    attributes:
+      label: Target Nucleus
+      description: Nuclide in standard notation
+      placeholder: "56Fe"
+    validations:
+      required: true
+
+  - type: input
+    id: reaction
+    attributes:
+      label: Reaction Type
+      description: Specify the exclusive channel (e.g., (n,n’), (n,2n), (n,f), (n,γ))
+      placeholder: "(n,2n)"
+    validations:
+      required: true
+
+  - type: input
+    id: residual
+    attributes:
+      label: Residual State (optional)
+      description: Ground state or isomer (if applicable)
+      placeholder: "56Fe* (m)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: incident_energies
+    attributes:
+      label: Incident Energies
+      description: |
+        List one or more incident energies **with uncertainties**.  
+        Format example:  
+        ```
+        14.1 MeV ± 0.1 MeV
+        16.5 MeV ± 0.2 MeV
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: cross_sections
+    attributes:
+      label: Cross Sections
+      description: |
+        Provide cross section values **with uncertainties**, matching the incident energy list.  
+        Format example:  
+        ```
+        102 mb ± 5 mb
+        96 mb ± 4 mb
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Additional Metadata
+      description: |
+        Include any experimental conditions, references, facility, detector info, corrections, or data provenance.
+      placeholder: "Measurement geometry, facility, detector setup, normalization method..."
+    validations:
+      required: false
