@@ -1,0 +1,80 @@
+name: Total Particle Production Cross Section Dataset
+description: Submit or update a dataset for total particle production cross sections (e.g., (n,xp), (p,xn))
+title: "[TPP XS] <projectile> + <target> → <outgoing> (x*)"
+labels: ["nuclear-data", "cross-sections", "particle-production"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Total Particle Production Cross Sections
+        Provide all required information to define one dataset
+        (projectile, target nucleus, outgoing particle, energies with uncertainties,
+        cross sections with uncertainties, and metadata). [1](https://neaorg-my.sharepoint.com/personal/julia_sprenger_oecd-nea_org/Documents/Microsoft%20Teams%20Chat%20Files/SG50_Requirements_forInstReview_v4_markup.pdf?web=1)
+
+  - type: input
+    id: projectile
+    attributes:
+      label: Projectile
+      description: Incident particle (e.g., n, p, d, α)
+      placeholder: "n"
+    validations:
+      required: true
+
+  - type: input
+    id: target
+    attributes:
+      label: Target Nucleus
+      description: Nuclide in standard notation
+      placeholder: "56Fe"
+    validations:
+      required: true
+
+  - type: input
+    id: outgoing
+    attributes:
+      label: Outgoing Particle (Total Production)
+      description: Use (projectile,x<particle>) notation, e.g., (n,xp), (p,xn) [1](https://neaorg-my.sharepoint.com/personal/julia_sprenger_oecd-nea_org/Documents/Microsoft%20Teams%20Chat%20Files/SG50_Requirements_forInstReview_v4_markup.pdf?web=1)
+      placeholder: "(n,xp)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: incident_energies
+    attributes:
+      label: Incident Energies
+      description: |
+        List one or more incident energies **with uncertainties**.
+        Example:
+        ```
+        100 MeV ± 1 MeV
+        800 MeV ± 10 MeV
+        ```
+        (These datasets are often at higher incident energies.) [1](https://neaorg-my.sharepoint.com/personal/julia_sprenger_oecd-nea_org/Documents/Microsoft%20Teams%20Chat%20Files/SG50_Requirements_forInstReview_v4_markup.pdf?web=1)
+    validations:
+      required: true
+
+  - type: textarea
+    id: cross_sections
+    attributes:
+      label: Cross Sections
+      description: |
+        Provide cross section values **with uncertainties**, aligned with the incident energies.
+        Example:
+        ```
+        35 mb ± 2 mb
+        27 mb ± 1.5 mb
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Additional Metadata
+      description: |
+        Add experimental details (facility, detector/setup, angular acceptance or integration method),
+        references/DOIs, normalization/corrections, covariance notes, data provenance, and any other relevant context. [2](https://neaorg.sharepoint.com/sites/DivisionDatabank/MBDAV/15th%20MBDAV/Presentations/17.%20exforStatus_mbdav2025_AGeorgiadou-UPDATED.pdf?web=1)[3](https://neaorg-my.sharepoint.com/personal/anastasia_georgiadou_oecd-nea_org/_layouts/15/Doc.aspx?sourcedoc=%7B8F24D499-1934-4440-8CE1-4CEC2E4F27A2%7D&file=exforStatus_mbdav2025_AGeorgiadou.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1)
+      placeholder: "Facility, beam characteristics, target thickness, detection system, analysis method, reference..."
+    validations:
+      required: false
