@@ -1,0 +1,146 @@
+name: Multi‑Reaction Cross Section Dataset
+description: Unified template for all nuclear reaction cross section types (total, exclusive, discrete, particle production, residual)
+title: "[XS] <projectile> + <target> → <reaction channel>"
+
+labels:
+  - nuclear-data
+  - cross-sections
+  - multi-reaction
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Combined Multi‑Reaction Cross Section Template
+        This template supports all reaction classes:
+        - Total cross sections  
+        - Exclusive channel cross sections  
+        - Discrete level cross sections  
+        - Total particle production cross sections  
+        - Residual production cross sections  
+
+        Complete only the fields relevant to your reaction type.
+
+  # -------------------- GENERAL FIELDS (always required) --------------------
+
+  - type: input
+    id: reaction_class
+    attributes:
+      label: Reaction Class
+      description: |
+        Enter reaction class:
+        - total  
+        - exclusive  
+        - discrete-level  
+        - total-particle-production  
+        - residual-production
+      placeholder: "discrete-level"
+    validations:
+      required: true
+
+  - type: input
+    id: projectile
+    attributes:
+      label: Projectile
+      description: Incident particle (e.g., n, p, d, α)
+      placeholder: "n"
+    validations:
+      required: true
+
+  - type: input
+    id: target
+    attributes:
+      label: Target Nucleus
+      placeholder: "56Fe"
+    validations:
+      required: true
+
+  - type: input
+    id: reaction_channel
+    attributes:
+      label: Reaction Channel
+      description: |
+        Examples:
+        - Total: (n,tot), (n,el), (n,non)
+        - Exclusive: (n,n'), (n,2n), (n,γ)
+        - Discrete level: (n,p0), (n,p1), (n,a1)
+        - Particle production: (n,xp), (p,xn)
+        - Residual: (p,x), (n,x)
+      placeholder: "(n,2n)"
+    validations:
+      required: true
+
+  # --------------------- OPTIONAL REACTION‑SPECIFIC FIELDS ---------------------
+
+  - type: input
+    id: outgoing_particle
+    attributes:
+      label: Outgoing Particle (if applicable)
+      description: Required for exclusive, discrete-level, and particle-production reactions
+      placeholder: "p"
+    validations:
+      required: false
+
+  - type: input
+    id: final_nucleus
+    attributes:
+      label: Final Nucleus (for residual production)
+      placeholder: "49Ti"
+    validations:
+      required: false
+
+  - type: input
+    id: residual_state
+    attributes:
+      label: Residual Ground State or Isomer (optional)
+      placeholder: "m1"
+    validations:
+      required: false
+
+  # ------------------------------ ENERGY DATA ------------------------------
+
+  - type: textarea
+    id: incident_energies
+    attributes:
+      label: Incident Energies
+      description: |
+        Provide incident energies **with uncertainties**.
+        Example:
+        ```
+        14.1 MeV ± 0.1 MeV
+        800 MeV ± 10 MeV
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: cross_sections
+    attributes:
+      label: Cross Sections
+      description: |
+        Provide cross section values **with uncertainties**, aligned with the incident energies.
+        Example:
+        ```
+        120 mb ± 6 mb
+        35 mb ± 2 mb
+        ```
+    validations:
+      required: true
+
+  # ------------------------------ METADATA ------------------------------
+
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Additional Metadata
+      description: |
+        Include experimental details such as:
+        - facility, beam characteristics  
+        - detector system and geometry  
+        - angular acceptance or integration  
+        - normalization or corrections  
+        - references/DOIs  
+        - uncertainty treatment  
+      placeholder: "Facility, target thickness, detector setup, analysis method..."
+    validations:
+      required: false
