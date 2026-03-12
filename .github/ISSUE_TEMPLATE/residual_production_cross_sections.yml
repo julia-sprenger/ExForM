@@ -1,0 +1,97 @@
+name: Residual Production Cross Section Dataset
+description: Submit or update a dataset for residual production cross sections (e.g., (n,x), (p,x))
+title: "[Residual XS] <projectile> + <target> → <final nucleus>"
+
+labels:
+  - nuclear-data
+  - cross-sections
+  - residual-production
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Residual Production Cross Sections
+        Provide all required information to define one dataset:
+        - Projectile  
+        - Target nucleus  
+        - Final nucleus  
+        - Optional: residual ground state or isomer  
+        - Incident energies with uncertainties  
+        - Cross sections with uncertainties  
+        - All relevant metadata
+
+  - type: input
+    id: projectile
+    attributes:
+      label: Projectile
+      description: Incident particle (e.g., n, p, d, α)
+      placeholder: "p"
+    validations:
+      required: true
+
+  - type: input
+    id: target
+    attributes:
+      label: Target Nucleus
+      description: Nuclide in standard notation
+      placeholder: "56Fe"
+    validations:
+      required: true
+
+  - type: input
+    id: final_nucleus
+    attributes:
+      label: Final Nucleus
+      description: Reaction product nucleus (e.g., 49Ti)
+      placeholder: "49Ti"
+    validations:
+      required: true
+
+  - type: input
+    id: residual_state
+    attributes:
+      label: Residual Ground State or Isomer (optional)
+      description: For reactions producing isomeric states (e.g., m, m1, m2)
+      placeholder: "m1"
+    validations:
+      required: false
+
+  - type: textarea
+    id: incident_energies
+    attributes:
+      label: Incident Energies
+      description: |
+        List one or more incident energies **with uncertainties**.
+        Example:
+        ```
+        800 MeV ± 20 MeV
+        1.2 GeV ± 0.05 GeV
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: cross_sections
+    attributes:
+      label: Cross Sections
+      description: |
+        Provide cross section values **with uncertainties**, aligned with the incident energies.
+        Example:
+        ```
+        12 mb ± 1 mb
+        8.5 mb ± 0.7 mb
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Additional Metadata
+      description: |
+        Include: experimental setup, beam/facility details, target thickness, detection system,
+        normalization method, corrections, reference/DOI, covariance information, etc.
+      placeholder: "Facility, beam characteristics, detector setup, analysis method, references..."
+    validations:
+      required: false
