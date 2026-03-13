@@ -1,0 +1,101 @@
+name: "Time-of-Flight Spectra Submission"
+description: "Submit TOF spectra data in IAEA/AGS-compatible format"
+title: "[TOF] <Experiment ID> - <Material>"
+labels: ["TOF", "IAEA", "Data Submission"]
+assignees:
+  - data-reviewer
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Time-of-Flight Spectra Submission
+        Please fill out all sections to ensure compatibility with IAEA/EXFOR standards.
+
+  - type: input
+    id: experiment_id
+    attributes:
+      label: Experiment ID
+      description: Unique identifier for the experiment (e.g., TOF-2026-001)
+      placeholder: "TOF-YYYY-XXX"
+    validations:
+      required: true
+
+  - type: input
+    id: facility
+    attributes:
+      label: Facility
+      description: Name of the laboratory or facility
+      placeholder: "Geel Linear Accelerator"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: beam_type
+    attributes:
+      label: Beam Type
+      options:
+        - Neutron
+        - Photon
+        - Proton
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: energy_range
+    attributes:
+      label: Energy Range
+      description: Energy range in eV or MeV
+      placeholder: "0.1 eV – 20 MeV"
+    validations:
+      required: true
+
+  - type: input
+    id: flight_path_length
+    attributes:
+      label: Flight Path Length
+      description: Length in meters
+      placeholder: "20.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample_info
+    attributes:
+      label: Sample Information
+      description: Include SAMPLE_ID, MATERIAL, THICKNESS, TEMPERATURE
+      placeholder: |
+        SAMPLE_ID: S-001
+        MATERIAL: U-235
+        THICKNESS: 0.005 cm
+        TEMPERATURE: 300 K
+    validations:
+      required: true
+
+  - type: textarea
+    id: measurement_data
+    attributes:
+      label: Measurement Data
+      description: Provide TOF data in tabular format (Time_of_Flight(ns), Energy(eV), Yield, Uncertainty, Covariance_Index)
+      placeholder: |
+        123.45   0.0253   0.987   0.002   1
+        150.67   0.0201   0.954   0.003   1
+    validations:
+      required: true
+
+  - type: textarea
+    id: covariance_matrix
+    attributes:
+      label: Covariance Matrix
+      description: Provide covariance matrix indexed by Covariance_Index
+      placeholder: |
+        1: [[0.000004, 0.000001],
+            [0.000001, 0.000009]]
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Additional Comments
+      description: Any notes about the experiment or data processing
+      placeholder: "Background subtracted; pulsed neutron source used."
