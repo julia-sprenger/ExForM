@@ -32,11 +32,11 @@ body:
     id: reaction
     attributes:
       label: Reaction Type
-      description: Select the total/elastic/non-elastic channel
+      description: Select the total/elastic/inelastic channel
       options:
         - "(n,tot)"
         - "(n,el)"
-        - "(n,non)"
+        - "(n,inel)"
     validations:
       required: true
 
