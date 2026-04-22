@@ -74,3 +74,14 @@ body:
       placeholder: "Facility, geometry, angle coverage, reference, analysis method..."
     validations:
       required: false
+      
+  - type: input
+    id: DOI
+    attributes:
+      label: Digital Object Identifier
+      description: |
+        The DOI reference of the data publication. When providing a DOI, subsequent fields
+        (author, reference, year) do not need to be filled, but will be extracted automatically.
+      placeholder: example 10.1103/PhysRevC.19.2127
+    validations:
+      required: false
